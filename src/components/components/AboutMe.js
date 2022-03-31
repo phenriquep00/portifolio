@@ -20,7 +20,8 @@ export function AboutMe() {
                     backgroundColor: '#243035',
                     color: '#FFFF00',
                     fontSize: '24px',
-                    flex: 1
+                    flex: 1,
+                    marginTop: '-10px'
                 }}
             >
                 <p onClick={scrollToElement} style={{marginTop: '-6px'}}>About Me</p>
