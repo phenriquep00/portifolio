@@ -13,7 +13,7 @@ export function AboutMe() {
                     display: 'flex',
                     flexDirection: 'column',
                     alignItems: 'center',
-                    width: '100%',
+                    width: '98.4%',
                     height: 'auto',
                     alignContent: 'center',
                     padding: '12px',
@@ -63,23 +63,23 @@ export function AboutMe() {
                                 >
                                     <p style={{ marginTop: '50px' }}> Technologies:</p>
                                     <TechIcon
-                                        icon='https://raw.githubusercontent.com/phenriquep00/portifolio/master/my-app/pages/src/img/languages/icons8-python.gif'
+                                        icon='https://raw.githubusercontent.com/phenriquep00/portifolio/master/src/components/img/languages/icons8-python.gif'
                                         language='python'
                                     />
                                     <TechIcon
-                                        icon='https://raw.githubusercontent.com/phenriquep00/portifolio/master/my-app/pages/src/img/languages/icons8-javascript.gif'
+                                        icon='https://raw.githubusercontent.com/phenriquep00/portifolio/master/src/components/img/languages/icons8-javascript.gif'
                                         language='javascript'
                                     />
                                     <TechIcon
-                                        icon='https://raw.githubusercontent.com/phenriquep00/portifolio/master/my-app/pages/src/img/languages/icons8-react-native.gif'
+                                        icon='https://raw.githubusercontent.com/phenriquep00/portifolio/master/src/components/img/languages/icons8-react-native.gif'
                                         language='react'
                                     />
                                     <TechIcon
-                                        icon='https://raw.githubusercontent.com/phenriquep00/portifolio/master/my-app/pages/src/img/languages/icons8-java.gif'
+                                        icon='https://raw.githubusercontent.com/phenriquep00/portifolio/master/src/components/img/languages/icons8-java.gif'
                                         language='java'
                                     />
                                     <TechIcon
-                                        icon='https://raw.githubusercontent.com/phenriquep00/portifolio/master/my-app/pages/src/img/languages/icons8-html.gif'
+                                        icon='https://raw.githubusercontent.com/phenriquep00/portifolio/master/src/components/img/languages/icons8-html.gif'
                                         language='HTML'
                                     />
 

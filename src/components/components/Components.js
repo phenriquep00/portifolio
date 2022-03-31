@@ -89,30 +89,30 @@ export function SocialMidiaBar() {
             >
                 <SocialMidiaIcons
                     source='https://github.com/phenriquep00'
-                    icon='https://raw.githubusercontent.com/phenriquep00/portifolio/master/my-app/pages/src/img/GitHub-Mark/PNG/GitHub-Mark-Light-32px.png'
+                    icon='https://raw.githubusercontent.com/phenriquep00/portifolio/master/src/components/img/GitHub-Mark/PNG/GitHub-Mark-Light-32px.png'
                 />
 
 
                 <SocialMidiaIcons
                     source='https://www.linkedin.com/in/pedro-lima-255a33223/'
-                    icon='https://raw.githubusercontent.com/phenriquep00/portifolio/master/my-app/pages/src/img/linkedin/linkedin-4-32.png'
+                    icon='https://raw.githubusercontent.com/phenriquep00/portifolio/master/src/components/img/linkedin/linkedin-4-32.png'
                 />
 
 
                 <SocialMidiaIcons
                     source='https://www.instagram.com/im.pedrooo/'
-                    icon='https://raw.githubusercontent.com/phenriquep00/portifolio/master/my-app/pages/src/img/instagram/instagram-4-32.png'
+                    icon='https://raw.githubusercontent.com/phenriquep00/portifolio/master/src/components/img/instagram/instagram-4-32.png'
                 />
 
 
                 <SocialMidiaIcons
                     source='gmail'
-                    icon='https://raw.githubusercontent.com/phenriquep00/portifolio/master/my-app/pages/src/img/gmail/email-14-32.png'
+                    icon='https://raw.githubusercontent.com/phenriquep00/portifolio/master/src/components/img/gmail/email-14-32.png'
                 />
 
                 <SocialMidiaIcons
                     source='https://twitter.com/Pedro32977686'
-                    icon='https://raw.githubusercontent.com/phenriquep00/portifolio/master/my-app/pages/src/img/twitter/twitter-4-32.png'
+                    icon='https://raw.githubusercontent.com/phenriquep00/portifolio/master/src/components/img/twitter/twitter-4-32.png'
                 />
             </div>
         </>
