@@ -50,7 +50,7 @@ export function AboutMe() {
                                 <pre>&nbsp;&nbsp;&nbsp;&nbsp;I&apos;m Pedro, <br/> 
                                 &nbsp;&nbsp;&nbsp;&nbsp;Technology enthusiast and student at UNIP (Universidade Paulista)
                                 <br/>
-                                &nbsp;&nbsp;&nbsp;&nbsp;Learning by trying, with lots, lots of failures <br/>
+                                &nbsp;&nbsp;&nbsp;&nbsp;Learning by trying and trying again <br/>
                                 <h2>/&#62;</h2>
                                 </pre>
 
@@ -128,15 +128,17 @@ function TechIcon(props) {
                     alignItems: 'center',
                     width: '100%',
                     height: '100%',
-                    backgroundColor: '#ffffff',
+                    backgroundColor: 'rgba(255, 255, 255, 0)',
                     borderRadius: '20px',
-                    margin: '2px'
+                    margin: '4px',
+                    marginRight: '-70px',
+                    marginTop: '8px'
 
                 }}
             >
-                <img src={props.icon} style={{width: '40%', height: '40%', borderBottom: '1px solid #000000'}}></img>
+                <img src={props.icon} style={{width: '40%', height: '40%', borderRadius: '20px', boxShadow: '2px 3px 2px 1px #403C3C'}}></img>
                 <div>
-                    <p style={{ color: '#000000' , fontSize: '16px'}}>{props.language}</p>
+                    <p style={{ color: '#ffffff' , fontSize: '16px'}}>{props.language}</p>
                 </div>
             </div>
         </>

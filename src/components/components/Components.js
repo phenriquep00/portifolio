@@ -37,7 +37,7 @@ export function Header() {
                     height: '7%',
                     alignItems: 'left',
                     position: 'fixed',
-                    zIndex: '10'
+                    zIndex: '20'
                 }}
             >
                 <SocialMidiaBar></SocialMidiaBar>
