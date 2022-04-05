@@ -2,6 +2,19 @@ import React from "react";
 
 
 export const SliderData = [
+    
+    {
+        image:
+            <Project
+                name='Poker Game'
+                image='https://raw.githubusercontent.com/phenriquep00/portifolio/master/src/components/img/projects/poker.png'
+                image1='https://raw.githubusercontent.com/phenriquep00/portifolio/master/src/components/img/projects/poker%202.png'
+                image2='https://raw.githubusercontent.com/phenriquep00/portifolio/master/src/components/img/projects/poker%203.png'
+                wid='400px' hei='500px'
+                description="A Poker game developed with python and the pygame library. It&apos;s single player and it&apos;s a game of chance. The player has to choose wisely in the right order to win."
+                gitlink='https://github.com/phenriquep00/poker'
+            ></Project>
+    },
     {
         image:
             <Project
@@ -43,23 +56,11 @@ export const SliderData = [
             <Project
                 name='Imersão Dados Alura'
                 image='https://raw.githubusercontent.com/phenriquep00/portifolio/master/src/components/img/projects/imersao%20dados.png'
-                image1='https://raw.githubusercontent.com/phenriquep00/portifolio/master/src/components/img/projects/teste.png'
-                image2='https://raw.githubusercontent.com/phenriquep00/portifolio/master/src/components/img/projects/teste1.png'
+                image1='https://raw.githubusercontent.com/phenriquep00/portifolio/master/src/components/img/projects/imersao%20dados%202.png'
+                image2='https://raw.githubusercontent.com/phenriquep00/portifolio/master/src/components/img/projects/imersao%20dados%203.png'
                 wid='400px' hei='500px'
                 description="Data Science Project developet during Alura&apos;s Data Immersion. With this project, I was able to learn how to use the data science tools and how to use them to solve problems."
                 gitlink='https://github.com/phenriquep00/imersao_dados_alura'
-            ></Project>
-    },
-    {
-        image:
-            <Project
-                name='Poker Game'
-                image='https://raw.githubusercontent.com/phenriquep00/portifolio/master/src/components/img/projects/poker.png'
-                image1='https://raw.githubusercontent.com/phenriquep00/portifolio/master/src/components/img/projects/poker%202.png'
-                image2='hhttps://raw.githubusercontent.com/phenriquep00/portifolio/master/src/components/img/projects/poker%203.png'
-                wid='400px' hei='500px'
-                description="A Poker game developed with python and the pygame library. It&apos;s single player and it&apos;s a game of chance. The player has to choose wisely in the right order to win."
-                gitlink='https://github.com/phenriquep00/poker'
             ></Project>
     }
 ];
