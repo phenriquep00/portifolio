@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 
 export const SliderData = [
@@ -84,6 +84,7 @@ function Project(props) {
                     {/* img div */}
                     <div>
                         <img style={{ width: props.wid, hei: props.hei, margin: '35px', border: '3px solid #ffffff' }} src={props.image} />
+                        
                     </div>
                     {/* text div */}
                     <div style={{ display: 'flex', flexDirection: 'column', margin: '5px', fontSize: '22px', marginTop: '30px', color: '#ffffff', wordSpacing: '8px', textAlign: 'justify', marginRight: '20px', lineHeight: '30px' }}>

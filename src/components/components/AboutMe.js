@@ -105,7 +105,7 @@ export function TextContent(props) {
             <div
                 style={{
                     display: 'flex',
-                    backgroundColor: '#547080',
+                    backgroundColor: '#5F66A3',
                     borderRadius: '10px',
                     width: props.wid,
                     height: props.hei,
