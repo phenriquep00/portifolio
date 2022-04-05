@@ -5,12 +5,12 @@ export const SliderData = [
     {
         image:
             <Project
-                name='Imersão Dados Alura'
-                image='https://raw.githubusercontent.com/phenriquep00/portifolio/master/src/components/img/projects/imersao%20dados.png'
+                name='Space Invaders'
+                image='https://raw.githubusercontent.com/phenriquep00/portifolio/master/src/components/img/projects/space%20invaders.png'
                 image1='https://raw.githubusercontent.com/phenriquep00/portifolio/master/src/components/img/projects/teste.png'
                 wid='400px' hei='500px'
-                description="Data Science Project developet during Alura&apos;s Data Immersion. With this project, I was able to learn how to use the data science tools and how to use them to solve problems."
-                gitlink='https://github.com/phenriquep00/imersao_dados_alura'
+                description="A game based on the classic Space Invaders. The player has to destroy all the enemies before they reach the bottom of the screen. Created with pygame and based in the freeCodeCamp&apos;s tutorial."
+                gitlink='https://github.com/phenriquep00/phenriquep00/tree/main/space_invader'
             ></Project>
     },
     {
@@ -38,12 +38,12 @@ export const SliderData = [
     {
         image:
             <Project
-                name='Space Invaders'
-                image='https://raw.githubusercontent.com/phenriquep00/portifolio/master/src/components/img/projects/space%20invaders.png'
+                name='Imersão Dados Alura'
+                image='https://raw.githubusercontent.com/phenriquep00/portifolio/master/src/components/img/projects/imersao%20dados.png'
                 image1='https://raw.githubusercontent.com/phenriquep00/portifolio/master/src/components/img/projects/teste.png'
                 wid='400px' hei='500px'
-                description="A game based on the classic Space Invaders. The player has to destroy all the enemies before they reach the bottom of the screen. Created with pygame and based in the freeCodeCamp&apos;s tutorial."
-                gitlink='https://github.com/phenriquep00/phenriquep00/tree/main/space_invader'
+                description="Data Science Project developet during Alura&apos;s Data Immersion. With this project, I was able to learn how to use the data science tools and how to use them to solve problems."
+                gitlink='https://github.com/phenriquep00/imersao_dados_alura'
             ></Project>
     },
     {
