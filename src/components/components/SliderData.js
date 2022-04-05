@@ -7,8 +7,8 @@ export const SliderData = [
             <Project
                 name='Space Invaders'
                 image='https://raw.githubusercontent.com/phenriquep00/portifolio/master/src/components/img/projects/space%20invaders.png'
-                image1='https://raw.githubusercontent.com/phenriquep00/portifolio/master/src/components/img/projects/teste.png'
-                image2='https://raw.githubusercontent.com/phenriquep00/portifolio/master/src/components/img/projects/teste1.png'
+                image1='https://raw.githubusercontent.com/phenriquep00/portifolio/master/src/components/img/projects/space%20invaders%202.png'
+                image2='https://raw.githubusercontent.com/phenriquep00/portifolio/master/src/components/img/projects/space%20invaders%203.png'
                 wid='400px' hei='500px'
                 description="A game based on the classic Space Invaders. The player has to destroy all the enemies before they reach the bottom of the screen. Created with pygame and based in the freeCodeCamp&apos;s tutorial."
                 gitlink='https://github.com/phenriquep00/phenriquep00/tree/main/space_invader'
@@ -55,8 +55,8 @@ export const SliderData = [
             <Project
                 name='Poker Game'
                 image='https://raw.githubusercontent.com/phenriquep00/portifolio/master/src/components/img/projects/poker.png'
-                image1='https://raw.githubusercontent.com/phenriquep00/portifolio/master/src/components/img/projects/teste.png'
-                image2='https://raw.githubusercontent.com/phenriquep00/portifolio/master/src/components/img/projects/teste1.png'
+                image1='https://raw.githubusercontent.com/phenriquep00/portifolio/master/src/components/img/projects/poker%202.png'
+                image2='hhttps://raw.githubusercontent.com/phenriquep00/portifolio/master/src/components/img/projects/poker%203.png'
                 wid='400px' hei='500px'
                 description="A Poker game developed with python and the pygame library. It&apos;s single player and it&apos;s a game of chance. The player has to choose wisely in the right order to win."
                 gitlink='https://github.com/phenriquep00/poker'
