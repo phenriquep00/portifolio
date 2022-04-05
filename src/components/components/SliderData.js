@@ -64,6 +64,8 @@ function Project(props) {
     const [colorFocus, setColorFocus] = React.useState('#ffffff')
     const [borderFocus, setBorderFocus] = React.useState('1px solid #ffffff')
     const [image, setImage] = React.useState(props.image)
+    const [inputTime, setInputTime] = React.useState(0)
+    const time = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
     return (
         <>
@@ -97,33 +99,42 @@ function Project(props) {
                             {
                                 if (image === props.image) {
                                     setImage(props.image1)
-                                } else {
+                                } else if (image === props.image1) {
                                     setImage(props.image)
                                 }
                             }
                         }}
                     >
                         <img style={{ width: props.wid, hei: props.hei, margin: '35px', border: '3px solid #ffffff' }} src={image} />
-                        {
-                            setTimeout(() => {
-                                if (image === props.image) {
-                                    setImage(props.image1)
-                                } else {
-                                    setImage(props.image)
-                                }
-                            }, 10000)
-                        }
-                        <div
-                            style={{
-                                width: '50px',
-                                height: '50px',
-                                backgroundColor: '#243035',
-                                marginTop: '-50px',
-                            }}
-                        
-                        >
 
-                        </div>
+                        <progress
+                            style={{
+                                backgroundColor:'#00ffff',
+                                color: '#000000',
+                                alignSelf: 'center',
+                                opacity: '0.5',
+                                marginTop: '-30px',
+                            }}
+                            value={inputTime}
+                            max="10"
+                        ></progress>
+                        {
+                            time.map(time => {
+                                setTimeout(() => {
+                                    if (inputTime < 10) {
+                                        setInputTime(inputTime + 1)
+                                    } else if (inputTime === 10) {
+                                        setInputTime(1)
+                                        if (image === props.image) {
+                                            setImage(props.image1)
+                                        } else if (image === props.image1) {
+                                            setImage(props.image)
+                                        }
+                                    }
+
+                                }, 1000)
+                            })
+                        }
 
                     </div>
                     {/* text div */}
