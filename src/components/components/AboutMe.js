@@ -22,7 +22,7 @@ export function AboutMe() {
                     color: '#FFFF00',
                     fontSize: '24px',
                     flex: 1,
-                    marginTop: '-10px'
+                    marginTop: '-10px',
                 }}
             >
                 <p onClick={scrollToElement} style={{ marginTop: '-6px' }}>About Me</p>
@@ -41,6 +41,7 @@ export function AboutMe() {
                                     margin: '2px',
                                     padding: '12px',
                                     color: '#ffffff',
+                                    
                                 }}
                             >
                                 <h2
@@ -128,6 +129,7 @@ export function TextContent(props) {
                     width: props.wid,
                     height: props.hei,
                     margin: '10px',
+                    boxShadow: '4px 5px 4px 1px #1E2021'
                 }}
             >
                 {props.children}

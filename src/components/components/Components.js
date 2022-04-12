@@ -62,10 +62,11 @@ export function ProfilePic() {
                 <img
                     src='https://github.com/phenriquep00.png'
                     style={{
-                        border: '1px solid',
+                        border: '2px solid',
                         borderRadius: '150px',
                         height: '200px',
-                        width: '200px'
+                        width: '200px',
+                        boxShadow: '2px 1px 2px 1px #010f19'
                     }}
                 >
                 </img>
