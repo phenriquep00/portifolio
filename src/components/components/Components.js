@@ -1,10 +1,10 @@
-import React, { useState } from "react";
-import ReactDOM from 'react-dom';
-
+import React, { useState, useEffect } from "react";
 
 export function Main(props) {
+
     return (
         <>
+
             <div
                 style={{
                     display: 'flex',
@@ -260,7 +260,7 @@ export function Profile() {
         <>
             <ProfilePic></ProfilePic>
             <div /* box under pic */
-                    /* TODO: make it draggable */
+                /* TODO: make it draggable */
                 style={{
                     border: '1px solid',
                     width: '60%',
