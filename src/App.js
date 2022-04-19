@@ -11,7 +11,7 @@ function Home() {
     const size = useWindowSize();
 
     useEffect(() => {
-        if (size.width < 768) {
+        if (size.width < size.height) {
             setIsMobile(true);
             setIsDesktop(false);
         } else {
