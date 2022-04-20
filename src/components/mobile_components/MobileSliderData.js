@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState }from "react";
 
 
 export const MobileSliderData = [
@@ -10,13 +10,18 @@ export const MobileSliderData = [
                 image='https://raw.githubusercontent.com/phenriquep00/portifolio/master/src/components/img/projects/poker.png'
                 image1='https://raw.githubusercontent.com/phenriquep00/portifolio/master/src/components/img/projects/poker%202.png'
                 image2='https://raw.githubusercontent.com/phenriquep00/portifolio/master/src/components/img/projects/poker%203.png'
-                description="teste"
+                description="A Poker game developed with python and the pygame library. It&apos;s single player and it&apos;s a game of chance. The player has to choose wisely in the right order to win."
                 gitlink='https://github.com/phenriquep00/poker'
             ></MobileProject>
     }
 ];
 
 function MobileProject(props) {
+
+    const [image, setImage] = useState(props.image)
+    const [inputTime, setInputTime] = useState(0)
+    const time = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
     return (
         <>
             <div
@@ -38,32 +43,101 @@ function MobileProject(props) {
                 <div
                     style={{
                         display: 'flex',
-                        paddingTop: '3%',
-                        paddingBottom: '5%',
+                        paddingTop: '6%',
+                        paddingBottom: '3%',
                         flexDirection: 'column',
                         justifyContent: 'center',
                         alignItems: 'center',
                         color: '#ffff00',
-                        fontSize: '4vw',
+                        fontSize: '4.5vw',
                     }}
                 >   {/* Image */}
                     <div>
                         {props.name}
                     </div>
                     <img
-                        src={props.image}
+                        src={image}
                         style={{
-                            width: '60%',
-                            height: '60%',
+                            width: '70%',
+                            height: '70%',
                             alignSelf: 'center',
                             border: '2px solid #ffff00',
                             boxShadow: '3px 3px 5px 1px #191712',
                             marginTop: '3%',
                         }}
                     ></img>
+                    <progress
+                            style={{
+                                backgroundColor:'#00ffff',
+                                color: '#000000',
+                                alignSelf: 'center',
+                                opacity: '0.5',
+                                marginTop: '5%',
+                            }}
+                            value={inputTime}
+                            max="10"
+                        ></progress>
+                        {
+                            time.map(time => {
+                                setTimeout(() => {
+                                    if (inputTime < 10) {
+                                        setInputTime(inputTime + 1)
+                                    } else if (inputTime === 10) {
+                                        setInputTime(1)
+                                        if (image === props.image) {
+                                            setImage(props.image1)
+                                        } else if (image === props.image1) {
+                                            setImage(props.image2)
+                                        } else if (image === props.image2) {
+                                            setImage(props.image)
+                                        }
+                                    }
+
+                                }, 1000)
+                            })
+                        }
                 </div>
-                <div>   {/* Description */}
+                <div
+                    style={{
+                        display: 'flex',
+                        flexDirection: 'column',
+                        justifyContent: 'center',
+                        alignItems: 'center',
+                        color: '#ffffff',
+                        fontSize: '3.5vw',
+                        height: '100%',
+                        width: '70%',
+                        paddingBottom: '5%',
+                        paddingTop: '5%',
+                        textAlign: 'justify',
+
+                    }}
+                >   {/* Description */}
                         {props.description}
+                        <input
+                            style={{
+                                backgroundColor: '#00ffff',
+                                color: '#000000',
+                                border: '2px solid #ffffff',
+                                borderRadius: '5px',
+                                padding: '5px',
+                                marginTop: '20%',
+                                fontSize: '14px',
+                                width: '60%',
+                                alignSelf: 'center',
+                                boxShadow: '0px 0px 5px #200F5E'
+
+                            }}
+                            type='button'
+                            value='check out the github repo'
+                            onClick={() => window.open(props.gitlink)}
+                            onMouseEnter={() => {
+
+                            }}
+                            onMouseLeave={() => {
+
+                            }}
+                        ></input>
                 </div>
             </div>
         </>
