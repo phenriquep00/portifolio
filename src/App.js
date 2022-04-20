@@ -4,6 +4,8 @@ import { Header, Main } from './components/components/Components';
 import { AboutMe } from './components/components/AboutMe';
 import { useState, useEffect } from 'react';
 import useWindowSize from './components/components/useWindowSize';
+import { MobileHeader } from './components/mobile_components/MobileHeader';
+import MobileSlider from './components/mobile_components/MobileSlider';
 
 function Home() {
     const [isMobile, setIsMobile] = useState(false);
@@ -19,28 +21,29 @@ function Home() {
             setIsDesktop(true);
         }
     }, [size]);
-        
+
     return (
         <>
             {
                 isMobile ?
-                    <>
+                    <> {/* mobile version */}
                         <div>
-                            <Header></Header>
+                            <MobileHeader></MobileHeader>
+                            <MobileSlider slides={SliderData}></MobileSlider>
                         </div>
                     </>
                     :
-                    <Main>
-                
-                <Header></Header>
-                <div>
-                    <ImageSlider slides={SliderData} />
-                </div>
-                
-                <AboutMe></AboutMe>
-            </Main>
+                    <Main> {/* desktop version */}
+
+                        <Header></Header>
+                        <div>
+                            <ImageSlider slides={SliderData} />
+                        </div>
+
+                        <AboutMe></AboutMe>
+                    </Main>
             }
-            
+
 
         </>
 
