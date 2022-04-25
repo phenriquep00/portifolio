@@ -23,12 +23,14 @@ const MobileSlider = ({ slides }) => {
                 style={{
                     display: 'flex',
                     flexDirection: 'row',
-                    justifyContent: 'center'
+                    justifyContent: 'center',
+                    height: '100%',
+                    width: '100%',
+
 
                 }}
             >
                 <section className='slider' style={{
-                    height: '100%',
                     display: 'flex',
                     justifyContent: 'center',
                     alignItems: 'center',
@@ -53,8 +55,8 @@ const MobileSlider = ({ slides }) => {
                                         <div
                                             style={{
                                                 width: '100%',
-                                                height: '80%',
-                                                boxShadow: '6px 3px 8px 1px #969696'
+                                                height: '100%',
+
                                             }}
                                         > {slide.image} </div>
                                     )}

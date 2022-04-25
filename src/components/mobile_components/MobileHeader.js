@@ -7,10 +7,10 @@ export function MobileHeader() {
                     flexDirection: 'row',
                     background: '#243035',
                     width: '100%',
-                    height: '7%',
+                    height: '100%',
                     alignItems: 'left',
-                    position: 'fixed',
-                    zIndex: '20'
+                    zIndex: '20',
+
                 }}
             >
                 <SocialMidiaBar></SocialMidiaBar>
@@ -24,7 +24,6 @@ export function SocialMidiaBar() {
         <>
             <div
                 style={{
-                    height: 'auto',
                     width: '100%',
                     display: 'flex',
                     alignItems: 'center',

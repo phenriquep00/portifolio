@@ -1,4 +1,5 @@
 import React, { useState }from "react";
+import { MobileAboutMe } from "./MobileAboutMe";
 
 
 export const MobileSliderData = [
@@ -27,13 +28,12 @@ function MobileProject(props) {
             <div
                 style={{
                     width: '100%',
-                    height: '100%',
+                    height: '90%',
                     backgroundColor: '#243035',
                     display: 'flex',
                     flexDirection: 'column',
                     justifyContent: 'center',
                     alignItems: 'center',
-                    marginTop: '8%',
                     justifyContent: 'center',
 
 
@@ -43,8 +43,6 @@ function MobileProject(props) {
                 <div
                     style={{
                         display: 'flex',
-                        paddingTop: '6%',
-                        paddingBottom: '3%',
                         flexDirection: 'column',
                         justifyContent: 'center',
                         alignItems: 'center',
@@ -52,18 +50,18 @@ function MobileProject(props) {
                         fontSize: '4.5vw',
                     }}
                 >   {/* Image */}
-                    <div>
+                    <div style={{marginTop: '10%'}}>
                         {props.name}
                     </div>
                     <img
                         src={image}
                         style={{
                             width: '70%',
-                            height: '70%',
                             alignSelf: 'center',
                             border: '2px solid #ffff00',
                             boxShadow: '3px 3px 5px 1px #191712',
-                            marginTop: '3%',
+                            marginTop: '6%',
+                            marginBottom: '5%',
                         }}
                     ></img>
                     <progress
@@ -72,7 +70,6 @@ function MobileProject(props) {
                                 color: '#000000',
                                 alignSelf: 'center',
                                 opacity: '0.5',
-                                marginTop: '5%',
                             }}
                             value={inputTime}
                             max="10"
@@ -107,9 +104,9 @@ function MobileProject(props) {
                         fontSize: '3.5vw',
                         height: '100%',
                         width: '70%',
-                        paddingBottom: '5%',
-                        paddingTop: '5%',
                         textAlign: 'justify',
+                        marginTop: '8%',
+                        marginBottom: '8%',
 
                     }}
                 >   {/* Description */}
@@ -120,12 +117,12 @@ function MobileProject(props) {
                                 color: '#000000',
                                 border: '2px solid #ffffff',
                                 borderRadius: '5px',
-                                padding: '5px',
-                                marginTop: '20%',
                                 fontSize: '14px',
                                 width: '60%',
                                 alignSelf: 'center',
-                                boxShadow: '0px 0px 5px #200F5E'
+                                boxShadow: '0px 0px 5px #200F5E',
+                                marginTop: '5%',
+                                marginBottom: '5%',
 
                             }}
                             type='button'
@@ -138,6 +135,7 @@ function MobileProject(props) {
 
                             }}
                         ></input>
+
                 </div>
             </div>
         </>
