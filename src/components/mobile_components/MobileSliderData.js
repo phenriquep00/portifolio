@@ -44,7 +44,7 @@ export const MobileSliderData = [
                 image='https://raw.githubusercontent.com/phenriquep00/portifolio/master/src/components/img/projects/cantina-cord.png'
                 image1='https://raw.githubusercontent.com/phenriquep00/portifolio/master/src/components/img/projects/cantina-cord.png'
                 image2='https://raw.githubusercontent.com/phenriquep00/portifolio/master/src/components/img/projects/cantina-cord.png'
-                description="descrição"
+                description="descrição" 
                 gitlink='https://github.com/phenriquep00/cantina-cord'
             ></MobileProject>
     },
@@ -71,14 +71,17 @@ function MobileProject(props) {
         <>
             <div
                 style={{
-                    width: '100%',
-                    height: '90%',
+                    width: '360px',
+                    height: '400px',
                     backgroundColor: '#243035',
                     display: 'flex',
                     flexDirection: 'column',
                     justifyContent: 'center',
                     alignItems: 'center',
                     justifyContent: 'center',
+                    alignSelf: 'center',
+                    marginLeft: '10%',
+                    boxShadow: '0px 0px 10px #000000',  
 
 
                 }}
@@ -92,6 +95,7 @@ function MobileProject(props) {
                         alignItems: 'center',
                         color: '#ffff00',
                         fontSize: '4.5vw',
+                        paddingTop: '10px',
                     }}
                 >   {/* Image */}
                     <div>
@@ -114,6 +118,8 @@ function MobileProject(props) {
                                 color: '#000000',
                                 alignSelf: 'center',
                                 opacity: '0.5',
+                                width: '50%',
+                                height: '8px',
                             }}
                             value={inputTime}
                             max="10"

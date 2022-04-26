@@ -52,7 +52,7 @@ function Home() {
                                 style={{
                                     width: '100%',
                                     height: '87%',
-                                    background: '#243035',
+                                    background: '#c7d0ec',
                                     position: 'fixed',
                                     marginTop: '12%',
                                 }}
@@ -64,7 +64,7 @@ function Home() {
                                     position: 'fixed',
                                     width: '100%',
                                     height: '7%',
-                                    background: '#243035',
+                                    background: '#c7d0ec',
                                     bottom: '0',
                                 }}
                             >

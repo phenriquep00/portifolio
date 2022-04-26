@@ -75,16 +75,18 @@ const MobileSlider = ({ slides }) => {
                                     style={{
                                         opacity: '1',
                                         transitionDuration: '1s',
-                                        transform: 'scale(1.08)'
+                                        transform: 'scale(1.08)',
+                                        alignItems: 'center',
+                                        justifyContent: 'center',
                                     }}
                                 >
                                     {index === current && (
                                         <div
                                             style={{
-                                                width: '100%',
+                                                display: 'flex',
+                                                alignSelf: 'center',
+                                                width: '90%',
                                                 height: '100%',
-                                                background: 'red'
-
                                             }}
                                         > {slide.image} </div>
                                     )}

@@ -68,7 +68,7 @@ const ImageSlider = ({ slides }) => {
                                     key={index}
                                     style={{
                                         opacity: '1',
-                                        transitionDuration: '1s',
+                                        transitionDuration: '2s',
                                         transform: 'scale(1.08)'
                                     }}
                                 >
