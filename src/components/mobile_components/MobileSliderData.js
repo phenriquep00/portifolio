@@ -25,6 +25,39 @@ export const MobileSliderData = [
                 description="descrição"
                 gitlink='https://github.com/phenriquep00/phenriquep00/tree/main/space_invader'
             ></MobileProject>
+    },
+    {
+        image:
+            <MobileProject
+                name='Hangman Game'
+                image='https://raw.githubusercontent.com/phenriquep00/portifolio/master/src/components/img/projects/hangman.png'
+                image1='https://raw.githubusercontent.com/phenriquep00/portifolio/master/src/components/img/projects/hangman.png'
+                image2='https://raw.githubusercontent.com/phenriquep00/portifolio/master/src/components/img/projects/hangman.png'
+                description="descrição"
+                gitlink='https://github.com/phenriquep00/hangman'
+            ></MobileProject>
+    },
+    {
+        image:
+            <MobileProject
+                name='CantinaCord'
+                image='https://raw.githubusercontent.com/phenriquep00/portifolio/master/src/components/img/projects/cantina-cord.png'
+                image1='https://raw.githubusercontent.com/phenriquep00/portifolio/master/src/components/img/projects/cantina-cord.png'
+                image2='https://raw.githubusercontent.com/phenriquep00/portifolio/master/src/components/img/projects/cantina-cord.png'
+                description="descrição"
+                gitlink='https://github.com/phenriquep00/cantina-cord'
+            ></MobileProject>
+    },
+    {
+        image:
+            <MobileProject
+                name='Imersão Dados Alura'
+                image='https://raw.githubusercontent.com/phenriquep00/portifolio/master/src/components/img/projects/imersao%20dados.png'
+                image1='https://raw.githubusercontent.com/phenriquep00/portifolio/master/src/components/img/projects/imersao%20dados%202.png'
+                image2='https://raw.githubusercontent.com/phenriquep00/portifolio/master/src/components/img/projects/imersao%20dados%203.png'
+                description="descrição"
+                gitlink='https://github.com/phenriquep00/imersao_dados_alura'
+            ></MobileProject>
     }
 ];
 

@@ -83,6 +83,7 @@ const MobileSlider = ({ slides }) => {
                                             style={{
                                                 width: '100%',
                                                 height: '100%',
+                                                background: 'red'
 
                                             }}
                                         > {slide.image} </div>
