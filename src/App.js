@@ -11,7 +11,39 @@ import { MobileAboutMe } from './components/mobile_components/MobileAboutMe';
 function Home() {
     const [isMobile, setIsMobile] = useState(false);
     const [isDesktop, setIsDesktop] = useState(false);
+    const [isAboutMe, setIsAboutMe] = useState('8%');
+
     const size = useWindowSize();
+
+
+    const [touchPosition, setTouchPosition] = useState(null);
+
+    const handleTouchStart = (e) => {
+        const touchDown = e.touches[0].clientY;
+        setTouchPosition(touchDown);
+    }
+    const handleTouchMove = (e) => {
+        const touchDown = touchPosition;
+
+        if (touchDown === null) {
+            return;
+        }
+
+        const currentTouch = e.touches[0].clientY;
+        const diff = touchDown - currentTouch;
+
+        if (diff > 5) {
+            setIsAboutMe("93%");
+        }
+
+        if (diff < 5) {
+            setIsAboutMe("8%");
+        }
+
+        setTouchPosition(null);
+    }
+
+
 
     useEffect(() => {
         if (size.width < size.height) {
@@ -45,7 +77,7 @@ function Home() {
                                     position: 'fixed',
                                 }}
                             >
-                                <MobileHeader/>
+                                <MobileHeader />
                             </div>
 
                             <div
@@ -57,18 +89,21 @@ function Home() {
                                     marginTop: '12%',
                                 }}
                             >
-                                <MobileSlider slides={SliderData}/>
+                                <MobileSlider slides={SliderData} />
                             </div>
                             <div
                                 style={{
                                     position: 'fixed',
                                     width: '100%',
-                                    height: '7%',
+                                    height: isAboutMe,
                                     background: '#c7d0ec',
                                     bottom: '0',
                                 }}
+                                onTouchStart={handleTouchStart}
+                                onTouchMove={handleTouchMove}
+                                conclick={handleTouchMove}
                             >
-                                <MobileAboutMe/>
+                                <MobileAboutMe />
                             </div>
                         </div>
                     </>

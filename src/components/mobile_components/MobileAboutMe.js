@@ -16,7 +16,13 @@ export function MobileAboutMe() {
 
                 }}
             >
-                <div>About Me</div>
+                <div
+                    style={{
+                        display: 'flex',
+                        flexDirection: 'column',
+                        marginTop: '2%',
+                    }}
+                >About Me</div>
             </div>
         </>
     )
