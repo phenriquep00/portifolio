@@ -11,7 +11,7 @@ export const MobileSliderData = [
                 image='https://raw.githubusercontent.com/phenriquep00/portifolio/master/src/components/img/projects/poker.png'
                 image1='https://raw.githubusercontent.com/phenriquep00/portifolio/master/src/components/img/projects/poker%202.png'
                 image2='https://raw.githubusercontent.com/phenriquep00/portifolio/master/src/components/img/projects/poker%203.png'
-                description="A Poker game developed with python and the pygame library. It&apos;s single player and it&apos;s a game of chance. The player has to choose wisely in the right order to win."
+                description="descrição"
                 gitlink='https://github.com/phenriquep00/poker'
             ></MobileProject>
     }
