@@ -65,8 +65,7 @@ function Home() {
                                     width: '100%',
                                     height: '7%',
                                     background: '#243035',
-                                    marginTop: '145%',
-
+                                    bottom: '0',
                                 }}
                             >
                                 <MobileAboutMe/>
