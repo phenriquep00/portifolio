@@ -4,6 +4,33 @@ import { MobileSliderData } from './MobileSliderData';
 const MobileSlider = ({ slides }) => {
     const [current, setCurrent] = useState(0);
     const length = slides.length;
+    const [touchPosition, setTouchPosition] = useState(null);
+
+    const handleTouchStart = (e) => {
+        const touchDown = e.touches[0].clientX;
+        setTouchPosition(touchDown);
+    }
+
+    const handleTouchMove = (e) => {
+        const touchDown = touchPosition;
+
+        if (touchDown === null) {
+            return;
+        }
+
+        const currentTouch = e.touches[0].clientX;
+        const diff = touchDown - currentTouch;
+
+        if (diff > 0) {
+            nextSlide();
+        }
+
+        if (diff < 0) {
+            prevSlide();
+        }
+
+        setTouchPosition(null);
+    }
 
     const nextSlide = () => {
         setCurrent(current === length - 1 ? 0 : current + 1);
@@ -26,9 +53,9 @@ const MobileSlider = ({ slides }) => {
                     justifyContent: 'center',
                     height: '100%',
                     width: '100%',
-
-
                 }}
+                onTouchStart={handleTouchStart}
+                onTouchMove={handleTouchMove}
             >
                 <section className='slider' style={{
                     display: 'flex',

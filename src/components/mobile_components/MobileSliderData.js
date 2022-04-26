@@ -14,6 +14,17 @@ export const MobileSliderData = [
                 description="descrição"
                 gitlink='https://github.com/phenriquep00/poker'
             ></MobileProject>
+    },
+    {
+        image:
+            <MobileProject
+                name='Space Invaders'
+                image='https://raw.githubusercontent.com/phenriquep00/portifolio/master/src/components/img/projects/space%20invaders.png'
+                image1='https://raw.githubusercontent.com/phenriquep00/portifolio/master/src/components/img/projects/space%20invaders%202.png'
+                image2='https://raw.githubusercontent.com/phenriquep00/portifolio/master/src/components/img/projects/space%20invaders%203.png'
+                description="descrição"
+                gitlink='https://github.com/phenriquep00/phenriquep00/tree/main/space_invader'
+            ></MobileProject>
     }
 ];
 
