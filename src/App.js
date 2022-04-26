@@ -54,7 +54,7 @@ function Home() {
                                     height: '87%',
                                     background: 'red',
                                     position: 'fixed',
-                                    marginTop: '10%',
+                                    marginTop: '11%',
                                 }}
                             >
                                 <MobileSlider slides={SliderData}/>
@@ -64,8 +64,8 @@ function Home() {
                                     position: 'fixed',
                                     width: '100%',
                                     height: '7%',
-                                    background: 'blue',
-                                    marginTop: '136%',
+                                    background: '#243035',
+                                    marginTop: '150%',
 
                                 }}
                             >

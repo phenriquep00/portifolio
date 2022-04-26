@@ -10,6 +10,7 @@ export function MobileHeader() {
                     height: '100%',
                     alignItems: 'left',
                     zIndex: '20',
+                    paddingBottom: '5%',
 
                 }}
             >

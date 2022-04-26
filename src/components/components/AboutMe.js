@@ -23,6 +23,8 @@ export function AboutMe() {
                     fontSize: '24px',
                     flex: 1,
                     marginTop: '-10px',
+                    borderTop: '3px solid #FFFF00',
+                    borderRadius: '20px',
                 }}
             >
                 <p onClick={scrollToElement} style={{ marginTop: '-6px' }}>About Me</p>

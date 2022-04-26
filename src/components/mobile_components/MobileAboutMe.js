@@ -10,7 +10,9 @@ export function MobileAboutMe() {
                     width: '100%',
                     background: '#243035',
                     position: 'fixed',
-                    color: 'yellow'
+                    color: 'yellow',
+                    borderTop: '3px solid yellow',
+                    borderRadius: '20px',
 
                 }}
             >

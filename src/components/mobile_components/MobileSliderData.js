@@ -60,7 +60,7 @@ function MobileProject(props) {
                             alignSelf: 'center',
                             border: '2px solid #ffff00',
                             boxShadow: '3px 3px 5px 1px #191712',
-                            marginTop: '6%',
+                            marginTop: '7%',
                             marginBottom: '5%',
                         }}
                     ></img>
@@ -105,8 +105,8 @@ function MobileProject(props) {
                         height: '100%',
                         width: '70%',
                         textAlign: 'justify',
-                        marginTop: '8%',
-                        marginBottom: '8%',
+                        marginTop: '12%',
+                        marginBottom: '12%',
 
                     }}
                 >   {/* Description */}
@@ -118,10 +118,10 @@ function MobileProject(props) {
                                 border: '2px solid #ffffff',
                                 borderRadius: '5px',
                                 fontSize: '14px',
-                                width: '60%',
+                                width: '70%',
                                 alignSelf: 'center',
                                 boxShadow: '0px 0px 5px #200F5E',
-                                marginTop: '5%',
+                                marginTop: '8%',
                                 marginBottom: '5%',
 
                             }}
