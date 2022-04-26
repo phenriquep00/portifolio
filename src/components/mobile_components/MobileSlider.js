@@ -57,6 +57,21 @@ const MobileSlider = ({ slides }) => {
                 onTouchStart={handleTouchStart}
                 onTouchMove={handleTouchMove}
             >
+                <div
+                    style={{
+                        width: '100%',
+                        height: '65%',
+                        alignSelf: 'center',
+                        background: '#243035',
+                        border: 'none',
+                        fontSize: '40px',
+                        boxShadow: '0px 0px 10px #243035',
+
+                    }}
+                    onClick={prevSlide}
+                ></div>
+
+
                 <section className='slider' style={{
                     display: 'flex',
                     justifyContent: 'center',
@@ -80,15 +95,25 @@ const MobileSlider = ({ slides }) => {
                                         justifyContent: 'center',
                                     }}
                                 >
+
                                     {index === current && (
                                         <div
                                             style={{
                                                 display: 'flex',
-                                                alignSelf: 'center',
-                                                width: '90%',
-                                                height: '100%',
+                                                flexDirection: 'row',
                                             }}
-                                        > {slide.image} </div>
+                                        >
+                                            <div
+                                                style={{
+                                                    display: 'flex',
+                                                    alignSelf: 'center',
+                                                    width: '90%',
+                                                    height: '100%',
+                                                    
+                                                }}
+                                            > {slide.image} </div>
+                                        </div>
+
                                     )}
                                 </div>
                             );
@@ -96,6 +121,21 @@ const MobileSlider = ({ slides }) => {
                     }
 
                 </section >
+
+                <div
+
+                    style={{
+                        width: '100%',
+                        height: '65%',
+                        alignSelf: 'center',
+                        background: '#243035',
+                        border: 'none',
+                        fontSize: '40px',
+                        boxShadow: '0px 0px 10px #243035',
+
+                    }}
+                    onClick={nextSlide}
+                ></div>
 
             </div>
 

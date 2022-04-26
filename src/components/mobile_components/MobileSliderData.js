@@ -1,5 +1,4 @@
 import React, { useState }from "react";
-import { MobileAboutMe } from "./MobileAboutMe";
 
 
 export const MobileSliderData = [
