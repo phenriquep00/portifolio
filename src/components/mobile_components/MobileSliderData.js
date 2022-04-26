@@ -50,7 +50,7 @@ function MobileProject(props) {
                         fontSize: '4.5vw',
                     }}
                 >   {/* Image */}
-                    <div style={{marginTop: '10%'}}>
+                    <div>
                         {props.name}
                     </div>
                     <img
@@ -101,9 +101,9 @@ function MobileProject(props) {
                         justifyContent: 'center',
                         alignItems: 'center',
                         color: '#ffffff',
-                        fontSize: '3.5vw',
+                        fontSize: '4vw',
                         height: '100%',
-                        width: '70%',
+                        width: '80%',
                         textAlign: 'justify',
                         marginTop: '12%',
                         marginBottom: '12%',
@@ -113,7 +113,7 @@ function MobileProject(props) {
                         {props.description}
                         <input
                             style={{
-                                backgroundColor: '#00ffff',
+                                backgroundColor: '#f5f77e',
                                 color: '#000000',
                                 border: '2px solid #ffffff',
                                 borderRadius: '5px',
@@ -122,7 +122,7 @@ function MobileProject(props) {
                                 alignSelf: 'center',
                                 boxShadow: '0px 0px 5px #200F5E',
                                 marginTop: '8%',
-                                marginBottom: '5%',
+                                marginBottom: '%',
 
                             }}
                             type='button'

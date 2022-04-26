@@ -52,9 +52,9 @@ function Home() {
                                 style={{
                                     width: '100%',
                                     height: '87%',
-                                    background: 'red',
+                                    background: '#243035',
                                     position: 'fixed',
-                                    marginTop: '11%',
+                                    marginTop: '12%',
                                 }}
                             >
                                 <MobileSlider slides={SliderData}/>
@@ -65,7 +65,7 @@ function Home() {
                                     width: '100%',
                                     height: '7%',
                                     background: '#243035',
-                                    marginTop: '150%',
+                                    marginTop: '160%',
 
                                 }}
                             >
