@@ -65,7 +65,7 @@ function Home() {
                                     width: '100%',
                                     height: '7%',
                                     background: '#243035',
-                                    marginTop: '160%',
+                                    marginTop: '145%',
 
                                 }}
                             >
