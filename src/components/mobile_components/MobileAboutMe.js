@@ -1,4 +1,4 @@
-import { ProfilePic } from "../components/Components"
+import { MobileProfilePic } from "./MobileProfilePic"
 
 
 export function MobileAboutMe() {
@@ -45,8 +45,7 @@ export function MobileAboutMeFocus() {
                     background: '#243035',
                     position: 'fixed',
                     color: 'yellow',
-                    borderTop: '3px solid yellow',
-                    borderRadius: '20px',
+                    marginTop: '-2%'
 
                 }}
             >
@@ -59,8 +58,61 @@ export function MobileAboutMeFocus() {
 
                     }}
                 >
-                    <div style={{marginBottom: '3%'}}>About Me</div>
-                    <ProfilePic></ProfilePic>
+                    <div style={{ marginBottom: '3%' }}>About Me</div>
+                    <div
+                        style={{
+                            width: '',
+                        }}
+                    >
+                        <MobileProfilePic></MobileProfilePic>
+                        <AboutMeBox></AboutMeBox>
+                    </div>
+
+
+                </div>
+            </div>
+        </>
+    )
+}
+
+
+function AboutMeBox() {
+    return (
+        <>
+            <div
+                style={{
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'center',
+                    width: '100%',
+                    height: '130%',
+                    alignContent: 'center',
+                }}
+            >
+                <div
+                    style={{
+                        margin: '2px',
+                        padding: '12px',
+                        color: '#ffffff',
+                        backgroundColor: '#5f66a3',
+                        width: '90%',
+                        height: '90%',
+                        borderRadius: '20px',
+                        boxShadow: '4px 5px 4px 1px #1E2021'
+
+                    }}
+                >
+                    <div
+                        style={{
+                            display: 'flex',
+                            flexDirection: 'column',
+                            alignItems: 'center',
+                            width: '100%',
+                            height: '100%',
+                        }}
+                    >   
+                    
+                    </div>
                 </div>
             </div>
         </>

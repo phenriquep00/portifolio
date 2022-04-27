@@ -12,7 +12,7 @@ function Home() {
     const [isMobile, setIsMobile] = useState(false);
     const [isDesktop, setIsDesktop] = useState(false);
     const [isAboutMeFocus, setIsAboutMeFocus] = useState('8%');
-    const [ isAboutMe, setIsAboutMe ] = useState(false);
+    const [ isAboutMe, setIsAboutMe ] = useState(true);
     
 
     const size = useWindowSize();
