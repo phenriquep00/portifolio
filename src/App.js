@@ -6,12 +6,14 @@ import { useState, useEffect } from 'react';
 import useWindowSize from './components/components/useWindowSize';
 import { MobileHeader } from './components/mobile_components/MobileHeader';
 import MobileSlider from './components/mobile_components/MobileSlider';
-import { MobileAboutMe } from './components/mobile_components/MobileAboutMe';
+import { MobileAboutMe, MobileAboutMeFocus } from './components/mobile_components/MobileAboutMe';
 
 function Home() {
     const [isMobile, setIsMobile] = useState(false);
     const [isDesktop, setIsDesktop] = useState(false);
-    const [isAboutMe, setIsAboutMe] = useState('8%');
+    const [isAboutMeFocus, setIsAboutMeFocus] = useState('8%');
+    const [ isAboutMe, setIsAboutMe ] = useState(false);
+    
 
     const size = useWindowSize();
 
@@ -33,11 +35,13 @@ function Home() {
         const diff = touchDown - currentTouch;
 
         if (diff > 5) {
-            setIsAboutMe("93%");
+            setIsAboutMeFocus("93%");
+            setIsAboutMe(false);
         }
 
         if (diff < 5) {
-            setIsAboutMe("8%");
+            setIsAboutMeFocus("8%");
+            setIsAboutMe(true);
         }
 
         setTouchPosition(null);
@@ -95,7 +99,7 @@ function Home() {
                                 style={{
                                     position: 'fixed',
                                     width: '100%',
-                                    height: isAboutMe,
+                                    height: isAboutMeFocus,
                                     background: '#c7d0ec',
                                     bottom: '0',
                                 }}
@@ -103,7 +107,7 @@ function Home() {
                                 onTouchMove={handleTouchMove}
                                 conclick={handleTouchMove}
                             >
-                                <MobileAboutMe />
+                                {isAboutMe ? <MobileAboutMe /> : <MobileAboutMeFocus />}
                             </div>
                         </div>
                     </>
