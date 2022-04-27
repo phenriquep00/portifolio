@@ -45,7 +45,7 @@ export function MobileAboutMeFocus() {
                     background: '#243035',
                     position: 'fixed',
                     color: 'yellow',
-                    marginTop: '-2%'
+                    marginTop: '-1%'
 
                 }}
             >
@@ -53,7 +53,7 @@ export function MobileAboutMeFocus() {
                     style={{
                         display: 'flex',
                         flexDirection: 'column',
-                        marginTop: '2%',
+                        marginTop: '3%',
                         alignItems: 'center',
 
                     }}
