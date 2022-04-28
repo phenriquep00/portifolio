@@ -7,6 +7,7 @@ import useWindowSize from './components/components/useWindowSize';
 import { MobileHeader } from './components/mobile_components/MobileHeader';
 import MobileSlider from './components/mobile_components/MobileSlider';
 import { MobileAboutMe, MobileAboutMeFocus } from './components/mobile_components/MobileAboutMe';
+import { MobileVersion } from './components/mobile_components/MobileVersion';
 
 function Home() {
     const [isMobile, setIsMobile] = useState(false);
@@ -39,10 +40,6 @@ function Home() {
             setIsAboutMe(false);
         }
 
-        if (diff < 5) {
-            setIsAboutMeFocus("8%");
-            setIsAboutMe(true);
-        }
 
         setTouchPosition(null);
     }
@@ -64,52 +61,7 @@ function Home() {
             {
                 isMobile ?
                     <> {/* mobile version */}
-                        <div
-                            style={{
-                                width: '100%',
-                                height: '100%',
-                                background: '#243035',
-                                display: 'flex',
-                                flexDirection: 'column',
-                            }}
-                        >
-                            <div
-                                style={{
-                                    width: '100%',
-                                    height: '7%',
-                                    background: '#243035',
-                                    position: 'fixed',
-                                }}
-                            >
-                                <MobileHeader />
-                            </div>
-
-                            <div
-                                style={{
-                                    width: '100%',
-                                    height: '87%',
-                                    background: '#c7d0ec',
-                                    position: 'fixed',
-                                    marginTop: '12%',
-                                }}
-                            >
-                                <MobileSlider slides={SliderData} />
-                            </div>
-                            <div
-                                style={{
-                                    position: 'fixed',
-                                    width: '100%',
-                                    height: isAboutMeFocus,
-                                    background: '#c7d0ec',
-                                    bottom: '0',
-                                }}
-                                onTouchStart={handleTouchStart}
-                                onTouchMove={handleTouchMove}
-                                conclick={handleTouchMove}
-                            >
-                                {isAboutMe ? <MobileAboutMe /> : <MobileAboutMeFocus />}
-                            </div>
-                        </div>
+                        <MobileVersion></MobileVersion>
                     </>
                     :
                     <Main> {/* desktop version */}

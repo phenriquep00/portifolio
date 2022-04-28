@@ -159,10 +159,10 @@ function AboutMeBox() {
                                 language='HTML'
                             />
                         </div>
-
                     </div>
                 </div>
             </div>
+            <ColapsedProjects></ColapsedProjects>
         </>
     )
 }
@@ -186,7 +186,37 @@ function MobileTechIcon(props) {
                 }}
             >
                 <img src={props.icon} style={{ width: '100%', height: '30%', borderRadius: '10px', boxShadow: '2px 3px 2px 1px #403C3C' }}></img>
-                
+
+            </div>
+        </>
+    )
+}
+
+function ColapsedProjects() {
+    return (
+        <>
+            <div
+                style={{
+                    display: 'flex',
+                    flexDirection: 'row',
+                    justifyContent: 'center',
+                    height: '80%',
+                    width: '100%',
+                    background: '#243035',
+                    color: 'yellow',
+                    borderTop: '3px solid yellow',
+                    borderRadius: '20px',
+                    marginTop: '6%'
+
+                }}
+            >
+                <div
+                    style={{
+                        display: 'flex',
+                        flexDirection: 'column',
+                        marginTop: '2%',
+                    }}
+                >Projects</div>
             </div>
         </>
     )
