@@ -55,6 +55,7 @@ export function MobileAboutMeFocus() {
                         flexDirection: 'column',
                         marginTop: '3%',
                         alignItems: 'center',
+                        
 
                     }}
                 >
@@ -87,6 +88,7 @@ function AboutMeBox() {
                     width: '100%',
                     height: 'auto',
                     alignContent: 'center',
+                    position: 'fixed',
                 }}
             >
                 <div
@@ -162,7 +164,6 @@ function AboutMeBox() {
                     </div>
                 </div>
             </div>
-            <ColapsedProjects></ColapsedProjects>
         </>
     )
 }
@@ -192,7 +193,7 @@ function MobileTechIcon(props) {
     )
 }
 
-function ColapsedProjects() {
+export function ColapsedProjects() {
     return (
         <>
             <div
@@ -206,7 +207,9 @@ function ColapsedProjects() {
                     color: 'yellow',
                     borderTop: '3px solid yellow',
                     borderRadius: '20px',
-                    marginTop: '6%'
+                    marginTop: '6%',
+                    position: 'fixed',
+                    top: '88%',
 
                 }}
             >
@@ -221,3 +224,4 @@ function ColapsedProjects() {
         </>
     )
 }
+

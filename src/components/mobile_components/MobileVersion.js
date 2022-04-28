@@ -4,6 +4,7 @@ import { MobileHeader } from './MobileHeader';
 import MobileSlider from './MobileSlider';
 import { SliderData } from '../components/SliderData';
 import { MobileAboutMeFocus } from './MobileAboutMe';
+import { ColapsedProjects } from './MobileAboutMe';
 
 
 
@@ -29,8 +30,13 @@ export function MobileVersion() {
         const diff = touchDown - currentTouch;
 
         if (diff > 5) {
-            setIsAboutMeFocus("93%");
-            setIsAboutMe(false);
+            if (isAboutMe) {
+                setIsAboutMeFocus("93%");
+                setIsAboutMe(false);
+            } else {
+                setIsAboutMeFocus("8%");
+                setIsAboutMe(true);
+            }
         }
 
 
@@ -82,9 +88,38 @@ export function MobileVersion() {
                     }}
                     onTouchStart={handleTouchStart}
                     onTouchMove={handleTouchMove}
-                    conclick={handleTouchMove}
+                    onClick={handleTouchMove}
                 >
-                    {isAboutMe ? <MobileAboutMe /> : <MobileAboutMeFocus />}
+                    {isAboutMe
+                        ?
+                        <MobileAboutMe />
+                        :
+                        <div
+                            style={{
+                                width: '100%',
+                                height: '100%',
+                                display: 'flex',
+                                flexDirection: 'column',
+
+                            }}
+                        >
+                            <MobileAboutMeFocus />
+                            <div
+                                style={{
+                                    background: '#243035',
+                                }}
+                                onTouchStart={handleTouchStart}
+                                onTouchMove={handleTouchMove}
+                                onClick={handleTouchMove}
+                            >
+                                <ColapsedProjects />
+                            </div>
+
+
+                        </div>
+
+
+                    }
                 </div>
             </div>
         </>
