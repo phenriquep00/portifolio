@@ -85,7 +85,7 @@ function AboutMeBox() {
                     flexDirection: 'column',
                     alignItems: 'center',
                     width: '100%',
-                    height: '130%',
+                    height: 'auto',
                     alignContent: 'center',
                 }}
             >
@@ -106,14 +106,87 @@ function AboutMeBox() {
                         style={{
                             display: 'flex',
                             flexDirection: 'column',
-                            alignItems: 'center',
                             width: '100%',
-                            height: '100%',
+                            height: 'auto',
+                            fontSize: '14px',
+                            marginTop: '-3%',
                         }}
-                    >   
-                    
+                    >
+                        <h2>&#60; Hello There!</h2>
+                        <pre
+                            style={{
+                                marginTop: '-1%',
+                            }}
+                        >
+                            &nbsp;&nbsp;&nbsp;&nbsp;I&apos;m Pedro, <br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;Technology enthusiast an studant at <br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;Universidade Paulista. <br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;Learning by trying and trying again <br />
+                            <h2>/&#62;</h2>
+                        </pre>
+                        <div
+                            style={{
+                                display: 'flex',
+                                flexDirection: 'row',
+                                justifyContent: 'center',
+                                width: '100%',
+                                height: 'auto',
+                                borderTop: '1px solid #ffffff',
+                                alignItems: 'center',
+                                fontSize: '14px',
+
+                            }}
+                        >
+                            Technologies:
+                            <MobileTechIcon
+                                icon='https://raw.githubusercontent.com/phenriquep00/portifolio/master/src/components/img/languages/icons8-python.gif'
+                                language='python'
+                            />
+                            <MobileTechIcon
+                                icon='https://raw.githubusercontent.com/phenriquep00/portifolio/master/src/components/img/languages/icons8-javascript.gif'
+                                language='javascript'
+                            />
+                            <MobileTechIcon
+                                icon='https://raw.githubusercontent.com/phenriquep00/portifolio/master/src/components/img/languages/icons8-react-native.gif'
+                                language='react'
+                            />
+                            <MobileTechIcon
+                                icon='https://raw.githubusercontent.com/phenriquep00/portifolio/master/src/components/img/languages/icons8-java.gif'
+                                language='java'
+                            />
+                            <MobileTechIcon
+                                icon='https://raw.githubusercontent.com/phenriquep00/portifolio/master/src/components/img/languages/icons8-html.gif'
+                                language='HTML'
+                            />
+                        </div>
+
                     </div>
                 </div>
+            </div>
+        </>
+    )
+}
+
+
+function MobileTechIcon(props) {
+    return (
+        <>
+            <div
+                style={{
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'center',
+                    width: '100%',
+                    height: '100%',
+                    backgroundColor: 'rgba(255, 255, 255, 0)',
+                    borderRadius: '20px',
+                    margin: '4px',
+                    marginTop: '8px'
+
+                }}
+            >
+                <img src={props.icon} style={{ width: '100%', height: '30%', borderRadius: '10px', boxShadow: '2px 3px 2px 1px #403C3C' }}></img>
+                
             </div>
         </>
     )
