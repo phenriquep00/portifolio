@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { Content } from '../Content/Content';
 
 
-export function Header() {
+export function Body() {
 
     const [isAboutMeFocused, setIsAboutMeFocused] = useState(true);
     const [isProjectsFocused, setIsProjectsFocused] = useState(false);

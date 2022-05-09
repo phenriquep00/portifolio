@@ -1,13 +1,10 @@
-import { Header } from './components/Header/Header';
+import { Body } from './components/Header/Body';
 
 
 function Home() {
 
     return (
-
-        <Header />
-
-
+        <Body />
     )
 }
 

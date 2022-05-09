@@ -1,4 +1,4 @@
-export function Projects ({isFocused}) {
+export function Projects () {
     return (
         <div>
             Projects

@@ -1,4 +1,4 @@
-export function Contact({isFocused}) {
+export function Contact() {
     return (
         <div>
             Contact
