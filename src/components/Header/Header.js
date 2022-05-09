@@ -35,7 +35,7 @@ export function Header() {
     return (
         <>
             <div className="absolute bg-gradient-to-r from-indigo-900 to-purple-600 h-full w-full flex flex-col">
-                <div className=" flex align-middle flex-row justify-around w-[91.4%] self-center">
+                <div className=" flex align-middle flex-row justify-around w-[91.4%] self-center gap-[2px] mt-3">
 
                     <HeaderButton text="About Me" onClickToFocus={handleAboutMeClick} focus={isAboutMeFocused} />
 
