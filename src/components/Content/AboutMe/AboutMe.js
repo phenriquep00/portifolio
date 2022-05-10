@@ -5,7 +5,7 @@ export function AboutMe() {
     return (
         <div className="w-[100%] h-[100%] flex flex-row">
             <Editor />
-            <CodePreview />
+           {/*  <CodePreview /> */}
         </div>
     )
 }
