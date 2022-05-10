@@ -20,11 +20,11 @@ export function Editor() {
     };
     
     const textArrayOne = [
-        "I'm Pedro. ", "IT student at Universidade Paulista ", "and developer.", " Practicing and learning new things ", "everyday." 
+        "I'm Pedro. ", "I.T student at Universidade Paulista ", "and developer.", " Practicing and learning new things ", "everyday." 
     ];
 
     return (
-        <div className="flex flex-col bg-[#2e2e2e] w-[45%] h-[90%] m-10 shadow-2xl drop-shadow-2xl rounded-sm">
+        <div className="flex flex-col bg-gradient-to-t from-[#272822] to-[#191520] w-[45%] h-[90%] m-10 shadow-2xl drop-shadow-2xl rounded-sm">
 
             <div className="h-[5%] bg-slate-400 rounded-t-sm flex flex-row items-start gap-1"> {/* header */}
 
