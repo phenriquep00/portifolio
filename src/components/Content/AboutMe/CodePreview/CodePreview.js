@@ -13,23 +13,23 @@ export function CodePreview() {
             </p>
             <div className="flex flex-wrap justify-center mt-12">
 
-                <div className="flex items-center justify-center w-16 h-16 m-4 rounded-full shadow-md drop-shadow-md animate-spin">
+                <div className="flex items-center justify-center w-10 h-10 lg:w-16 lg:h-16 m-4 rounded-full  animate-spin">
                     <img src=" https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="react"/>
                 </div>
 
-                <div className="flex items-center justify-center w-16 h-16 m-4 rounded-sm shadow-md drop-shadow-md animate-bounce">
+                <div className="flex items-center justify-center w-10 h-10 lg:w-16 lg:h-16 m-4 rounded-sm shadow-md drop-shadow-md animate-bounce">
                     <img src="https://seeklogo.com/images/C/css3-logo-8724075274-seeklogo.com.png" alt="react" />
                 </div>
 
-                <div className="flex items-center justify-center w-16 h-16 m-4 rounded-sm shadow-md drop-shadow-md animate-bounce">
+                <div className="flex items-center justify-center w-10 h-10 lg:w-16 lg:h-16 m-4 rounded-sm shadow-md drop-shadow-md animate-bounce">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg" alt="react" />
                 </div>
 
-                <div className="flex items-center justify-center w-16 h-16 m-4 rounded-sm shadow-md drop-shadow-md animate-bounce">
+                <div className="flex items-center justify-center w-10 h-10 lg:w-16 lg:h-16 m-4 rounded-sm shadow-md drop-shadow-md animate-bounce">
                     <img src="https://seeklogo.com/images/H/html5-with-wordmark-color-logo-4259B7F24F-seeklogo.com.png" alt="react" />
                 </div>
 
-                <div className="flex items-center justify-center w-16 h-16 m-4 rounded-full shadow-md drop-shadow-md animate-spin">
+                <div className="flex items-center justify-center w-10 h-10 lg:w-16 lg:h-16 rounded-full shadow-md drop-shadow-md animate-spin">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="react" />
                 </div>
 

@@ -20,7 +20,7 @@ export function Editor() {
     };
     
     const textArrayOne = [
-        "I'm Pedro. ", "I.T student at Universidade Paulista ", "and developer.", " Practicing and learning new things ", "everyday." 
+        "I'm Pedro. ", "I.T student at Universidade Paulista ", "and independent developer.", " Practicing and learning new things ", "everyday." 
     ];
 
     return (
