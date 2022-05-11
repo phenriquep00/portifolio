@@ -4,15 +4,15 @@ import { RadioGroup } from '@headlessui/react'
 const plans = [
   {
     name: 'Project 1',
-    
+
   },
   {
     name: 'Project 2',
-    
+
   },
   {
     name: 'Project 3',
-    
+
   },
   {
     name: 'Project 4',
@@ -22,28 +22,26 @@ const plans = [
   }
 ]
 
-export function Options() {
+export function Options({ onSelectedProjectChange }) {
   const [selected, setSelected] = useState(plans[0])
-  
+
 
   return (
-    <div className="w-full px-4 py-16">
-      <div className="">
-        <RadioGroup value={selected} onChange={setSelected}>
+    <div className="w-full px-4 py-16" >
+      <div className="" >
+        <RadioGroup value={selected} onChange={setSelected} onClick={onSelectedProjectChange}>
           <RadioGroup.Label className="sr-only">Server size</RadioGroup.Label>
           <div className="space-y-2">
             {plans.map((plan) => (
               <RadioGroup.Option
                 key={plan.name}
-                value={plan}
+                value={plan.name}
                 className={({ active, checked }) =>
-                  `${
-                    active
-                      ? 'ring-2 ring-white ring-opacity-60 ring-offset-2 ring-offset-sky-300'
-                      : ''
+                  `${active
+                    ? 'ring-2 ring-white ring-opacity-60 ring-offset-2 ring-offset-sky-300'
+                    : ''
                   }
-                  ${
-                    checked ? 'bg-sky-900 bg-opacity-75 text-white' : 'bg-white'
+                  ${checked ? 'bg-sky-900 bg-opacity-75 text-white' : 'bg-white'
                   }
                     relative flex cursor-pointer rounded-lg px-5 py-4 shadow-md focus:outline-none`
                 }
@@ -52,26 +50,24 @@ export function Options() {
                   <>
                     <div className="flex w-full items-center justify-between">
                       <div className="flex items-center">
-                        <div className="text-sm">
+                        <div className="text-sm flex-1">
                           <RadioGroup.Label
                             as="p"
-                            className={`font-medium  ${
-                              checked ? 'text-white' : 'text-gray-900'
-                            }`}
+                            className={`font-medium  ${checked ? 'text-white' : 'text-gray-900'
+                              }`}
                           >
                             {plan.name}
                           </RadioGroup.Label>
                           <RadioGroup.Description
                             as="span"
-                            className={`inline ${
-                              checked ? 'text-sky-100' : 'text-gray-500'
-                            }`}
+                            className={`inline ${checked ? 'text-sky-100' : 'text-gray-500'
+                              }`}
                           >
                           </RadioGroup.Description>
                         </div>
                       </div>
                       {checked && (
-                        <div className="shrink-0 text-white">
+                        <div className="shrink-0 text-white" >
                           <CheckIcon className="h-6 w-6" />
                         </div>
                       )}
