@@ -3,7 +3,7 @@ import { RadioGroup } from '@headlessui/react'
 
 const plans = [
   {
-    name: 'Project 1',
+    name: 'Poker Game',
 
   },
   {
@@ -23,7 +23,7 @@ const plans = [
 ]
 
 export function Options({ onSelectedProjectChange }) {
-  const [selected, setSelected] = useState(plans[0])
+  const [selected, setSelected] = useState("Poker Game")
 
 
   return (
@@ -31,7 +31,7 @@ export function Options({ onSelectedProjectChange }) {
       <div className="" >
         <RadioGroup value={selected} onChange={setSelected} onClick={onSelectedProjectChange}>
           <RadioGroup.Label className="sr-only">Server size</RadioGroup.Label>
-          <div className="space-y-2">
+          <div className="space-y-4">
             {plans.map((plan) => (
               <RadioGroup.Option
                 key={plan.name}
@@ -43,7 +43,7 @@ export function Options({ onSelectedProjectChange }) {
                   }
                   ${checked ? 'bg-sky-900 bg-opacity-75 text-white' : 'bg-white'
                   }
-                    relative flex cursor-pointer rounded-lg px-5 py-4 shadow-md focus:outline-none`
+                    relative flex cursor-pointer rounded-lg px-5 py-6 shadow-md focus:outline-none`
                 }
               >
                 {({ active, checked }) => (

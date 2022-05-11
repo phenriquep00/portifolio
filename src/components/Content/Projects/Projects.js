@@ -1,9 +1,11 @@
 import { Options } from "./Options/RadioGroup";
 import { useState } from "react";
+import { Overview } from "./Overview/Overview";
+import pokerBg from "../../assets/poker-bg.jpg";
 
 
 export function Projects() {
-    const [selectedProject, setSelectedProject] = useState("Project 1");
+    const [selectedProject, setSelectedProject] = useState("Poker Game");
 
     function handleSelectedProjectChange(e) {
         setSelectedProject(e.target.innerText);
@@ -12,35 +14,35 @@ export function Projects() {
     return (
         <div className="flex flex-row w-full h-full">
 
-            <div className="p-4 w-[23%] h-[100%]"> {/* Options div */}
+            <div className="p-4 w-[20%] h-[100%] flex flex-col items-center flex-1 justify-center content-center"> {/* Options div */}
                 <Options onSelectedProjectChange={handleSelectedProjectChange}/>
             </div>
             
-            <div className="p-4 w-[81%] h-[100%] border-2 border-orange-600"> {/* focused div */}
+            <div className="w-[80%] h-[90%] self-center border-separate border-2 shadow-2xl"> {/* focused div */}
                 {
-                    selectedProject === "Project 1" 
+                    selectedProject === "Poker Game"
                     ? 
-                    <div> Project 1 </div>
+                    <Overview title="Poker Game" bg={pokerBg} color="#000" />
                     :
                     (
                         selectedProject === "Project 2"
                         ?
-                        <div> Project 2 </div>
+                        <Overview title="Project 2" />
                         :
                         (
                             selectedProject === "Project 3"
                             ?
-                            <div> Project 3 </div>
+                            <Overview title="Project 3" />
                             :
                             (
                                 selectedProject === "Project 4"
                                 ?
-                                <div> Project 4 </div>
+                                <Overview title="Project 4" />
                                 :
                                 (
                                     selectedProject === "Project 5"
                                     ?
-                                    <div> Project 5 </div>
+                                    <Overview title="Project 5" />
                                     :
                                     null /* Add new projects here */
                                 )
