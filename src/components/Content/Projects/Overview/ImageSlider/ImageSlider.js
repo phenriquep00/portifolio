@@ -49,22 +49,22 @@ export function ImageSlider({ project }) {
             setImage3(cat3);
             
         }
-        else if (project === "Project 2") {
+        else if (project === "Imersao Dados Alura") {
             setImage1(dog1);
             setImage2(dog2);
             setImage3(dog3);
         }
-        else if (project === "Project 3") {
+        else if (project === "Pong") {
             setImage1(mice1);
             setImage2(mice2);
             setImage3(mice3);
         }
-        else if (project === "Project 4") {
+        else if (project === "NLW return") {
             setImage1(fish1);
             setImage2(fish2);
             setImage3(fish3);
         }
-        else if (project === "Project 5") {
+        else if (project === "Hangman") {
             setImage1(bird1);
             setImage2(bird2);
             setImage3(bird3);

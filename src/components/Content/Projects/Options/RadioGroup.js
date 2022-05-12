@@ -7,18 +7,18 @@ const plans = [
 
   },
   {
-    name: 'Project 2',
+    name: 'Imersao Dados Alura',
 
   },
   {
-    name: 'Project 3',
+    name: 'Pong',
 
   },
   {
-    name: 'Project 4',
+    name: 'NLW return',
   },
   {
-    name: 'Project 5',
+    name: 'Hangman',
   }
 ]
 

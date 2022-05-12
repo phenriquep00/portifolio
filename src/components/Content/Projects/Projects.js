@@ -22,7 +22,7 @@ export function Projects() {
                 <Options onSelectedProjectChange={handleSelectedProjectChange} />
             </div>
 
-            <div className="w-[80%] h-[90%] self-center border-separate ring-2"> {/* focused div */}
+            <div className="w-[80%] h-[90%] self-center "> {/* focused div */}
                 {
                     selectedProject === "Poker Game"
                         ?
@@ -35,10 +35,10 @@ export function Projects() {
                         </Overview>
                         :
                         (
-                            selectedProject === "Project 2"
+                            selectedProject === "Imersao Dados Alura"
                                 ?
                                 <Overview
-                                    title="Imersao Dados"
+                                    title="Imersao Dados Alura"
                                     description=" Imersao dados alura "
                                     repo="https://github.com/phenriquep00/poker"
                                 >
@@ -46,7 +46,7 @@ export function Projects() {
                                 </Overview>
                                 :
                                 (
-                                    selectedProject === "Project 3"
+                                    selectedProject === "Pong"
                                         ?
                                         <Overview
                                             title="Pong"
@@ -57,7 +57,7 @@ export function Projects() {
                                         </Overview>
                                         :
                                         (
-                                            selectedProject === "Project 4"
+                                            selectedProject === "NLW return"
                                                 ?
                                                 <Overview
                                                     title="NLW return"
@@ -68,7 +68,7 @@ export function Projects() {
                                                 </Overview>
                                                 :
                                                 (
-                                                    selectedProject === "Project 5"
+                                                    selectedProject === "Hangman"
                                                         ?
                                                         <Overview
                                                             title="Hangman"
