@@ -1,30 +1,30 @@
 import { Description } from './Description/Description';
-import { ImageSlider } from './ImageSlider/ImageSlider';
 
-export function Overview({ title, description, repo }) {
+
+export function Overview(props) {
 
     function handleOpenRepo() {
-        window.open(repo, "_blank");
+        window.open(props.repo, "_blank");
     }
+
 
     return (
         <div className={`flex w-full h-full flex-col items-center`}>
-            <h1 className="text-6xl font-mono m-4">{title}</h1>
+            <h1 className="text-6xl font-mono m-4">{props.title}</h1>
 
             <div className="flex flex-row w-full h-full"> {/*  content div */}
                 {/* description div */}
                 <div className="w-2/4 h-[92%]">
-                     <Description description={description} onOpenRepo={handleOpenRepo}/>
+                     <Description description={props.description} onOpenRepo={handleOpenRepo}/>
                 </div>
                    
 
                 {/* image div */}
                 <div className="w-2/4 h-[92%] ml-8">
-                    <ImageSlider />
+                    {props.children}
                 </div>
 
             </div>
-
         </div>
     )
 }

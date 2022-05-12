@@ -3,12 +3,17 @@ import { useState } from "react";
 import { Overview } from "./Overview/Overview";
 
 
+import { ImageSlider } from "./Overview/ImageSlider/ImageSlider";
+
+
+
 export function Projects() {
     const [selectedProject, setSelectedProject] = useState("Poker Game");
 
     function handleSelectedProjectChange(e) {
         setSelectedProject(e.target.innerText);
     }
+
 
     return (
         <div className="flex flex-row w-full h-full">
@@ -25,27 +30,53 @@ export function Projects() {
                             title="Poker Game"
                             description=" A poker game created with python and pygame "
                             repo="https://github.com/phenriquep00/poker"
-                        />
+                        >
+                            <ImageSlider project={selectedProject}/>
+                        </Overview>
                         :
                         (
                             selectedProject === "Project 2"
                                 ?
-                                <Overview title="Project 2" />
+                                <Overview
+                                    title="Imersao Dados"
+                                    description=" Imersao dados alura "
+                                    repo="https://github.com/phenriquep00/poker"
+                                >
+                                    <ImageSlider project={selectedProject}/>
+                                </Overview>
                                 :
                                 (
                                     selectedProject === "Project 3"
                                         ?
-                                        <Overview title="Project 3" />
+                                        <Overview
+                                            title="Pong"
+                                            description=" A pong game created with python "
+                                            repo="https://github.com/phenriquep00/poker"
+                                        >
+                                            <ImageSlider project={selectedProject}/>
+                                        </Overview>
                                         :
                                         (
                                             selectedProject === "Project 4"
                                                 ?
-                                                <Overview title="Project 4" />
+                                                <Overview
+                                                    title="NLW return"
+                                                    description=" A return calculator for the New Life Withdrawal "
+                                                    repo="https://github.com/phenriquep00/poker"
+                                                >
+                                                    <ImageSlider project={selectedProject}/>
+                                                </Overview>
                                                 :
                                                 (
                                                     selectedProject === "Project 5"
                                                         ?
-                                                        <Overview title="Project 5" />
+                                                        <Overview
+                                                            title="Hangman"
+                                                            description=" A hangman game  "
+                                                            repo="https://github.com/phenriquep00/poker"
+                                                        >
+                                                            <ImageSlider project={selectedProject}/>
+                                                        </Overview>
                                                         :
                                                         null /* Add new projects here */
                                                 )
