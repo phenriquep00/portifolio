@@ -69,6 +69,24 @@ export function ImageSlider({ project }) {
             setImage2(bird2);
             setImage3(bird3);
         }
+        else if (project === "Space Invaders") {
+            setImage1(bird1);
+            setImage2(bird2);
+            setImage3(bird3);
+        } else if (project === "Java Exercises"){
+            setImage1(bird1);
+            setImage2(bird2);
+            setImage3(bird3);
+        } else if (project === "Small Python Projects"){
+            setImage1(bird1);
+            setImage2(bird2);
+            setImage3(bird3);
+        } else if (project === "React Alura"){
+            setImage1(bird1);
+            setImage2(bird2);
+            setImage3(bird3);
+        }
+        
     }, [project]);
 
     useEffect(() => {

@@ -4,21 +4,30 @@ import { RadioGroup } from '@headlessui/react'
 const plans = [
   {
     name: 'Poker Game',
-
   },
   {
     name: 'Imersao Dados Alura',
-
   },
   {
     name: 'Pong',
-
   },
   {
     name: 'NLW return',
   },
   {
     name: 'Hangman',
+  },
+  {
+    name: 'Space Invaders',
+  },
+  {
+    name: 'Java Exercises',
+  },
+  {
+    name: 'Small Python Projects',
+  },
+  {
+    name: 'React Alura'
   }
 ]
 
@@ -27,7 +36,7 @@ export function Options({ onSelectedProjectChange }) {
 
 
   return (
-    <div className="w-full px-4 py-16" >
+    <div className="w-full px-4 pt-28 self-center" >
       <div className="" >
         <RadioGroup value={selected} onChange={setSelected} onClick={onSelectedProjectChange}>
           <RadioGroup.Label className="sr-only">Server size</RadioGroup.Label>
@@ -43,7 +52,7 @@ export function Options({ onSelectedProjectChange }) {
                   }
                   ${checked ? 'bg-sky-900 bg-opacity-75 text-white' : 'bg-white opacity-70'
                   }
-                    relative flex cursor-pointer rounded-lg px-5 py-6 shadow-md focus:outline-none hover:opacity-100`
+                    relative flex cursor-pointer rounded-lg px-5 py-4 shadow-md focus:outline-none hover:opacity-100`
                 }
               >
                 {({ active, checked }) => (
