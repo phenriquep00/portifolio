@@ -36,11 +36,10 @@ export function Options({ onSelectedProjectChange }) {
 
 
   return (
-    <div className="w-full px-4 pt-28 self-center" >
-      <div className="" >
+      <div className="w-[100%] px-4 max-h-[400px] border-2 inset-0 overflow-auto rounded-md" >
         <RadioGroup value={selected} onChange={setSelected} onClick={onSelectedProjectChange}>
           <RadioGroup.Label className="sr-only">Server size</RadioGroup.Label>
-          <div className="space-y-4">
+          <div className=" w-full space-y-4 ">
             {plans.map((plan) => (
               <RadioGroup.Option
                 key={plan.name}
@@ -83,6 +82,5 @@ export function Options({ onSelectedProjectChange }) {
           </div>
         </RadioGroup>
       </div>
-    </div>
   )
 }

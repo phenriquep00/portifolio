@@ -18,7 +18,7 @@ export function Projects() {
     return (
         <div className="flex flex-row w-full h-full">
 
-            <div className="p-4 w-[20%] h-[80%] flex flex-col content-evenly items-center justify-center"> {/* Options div */}
+            <div className="p-4 w-[20%] h-[100%] flex flex-col items-center justify-center"> {/* Options div */}
                 <Options onSelectedProjectChange={handleSelectedProjectChange} />
             </div>
 
