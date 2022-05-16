@@ -9,7 +9,7 @@ export function Overview(props) {
 
 
     return (
-        <div className={`flex w-full h-full flex-col items-center`}>
+        <div className={`flex w-full h-full flex-col items-center transition-transform duration-200 ease-in-out`}>
             <h1 className="text-6xl font-mono m-4">{props.title}</h1>
 
             <div className="flex flex-row w-full h-full"> {/*  content div */}
