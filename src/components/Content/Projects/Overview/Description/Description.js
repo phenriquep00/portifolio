@@ -4,7 +4,7 @@ import { Popover } from "@headlessui/react";
 
 export function Description( { description, onOpenRepo } ) {
     return (
-        <div className="flex items-start m-4 bg-gradient-radial from-blue-900 via-sky-600 to-blue-800 w-full h-full p-6 text-justify shadow-2xl drop-shadow-2xl rounded-md ring-2 ring-indigo-900">
+        <div className="flex items-start m-4 bg-gradient-radial from-teal-700 via-blue-700 to-cyan-900 w-full h-full p-6 text-justify shadow-2xl drop-shadow-2xl rounded-md ring-2 ring-teal-900">
                     <p className="text-cyan-100 text-2xl font-mono font-hint indent-8 break-no m-4">
                         {description}
                         <br />
