@@ -95,7 +95,7 @@ export function ImageSlider({ project }) {
 
     return (
         <div
-            className="m-4 w-11/12 h-full p-6 text-justify shadow-2xl drop-shadow-2xl rounded-md flex flex-row items-center transition-all duration-500 ease-in-out transform hover:scale-105"
+            className="m-4 w-11/12 h-full p-6 text-justify shadow-2xl drop-shadow-2xl rounded-md ring-1 ring-gray-900 flex flex-row items-center transition-all duration-500 ease-in-out transform hover:scale-105"
             style={{
                 backgroundImage: `url(${currentImage})`,
                 backgroundSize: 'cover',
