@@ -15,7 +15,7 @@ export function Overview(props) {
             <div className="flex flex-row w-full h-full"> {/*  content div */}
                 {/* description div */}
                 <div className="w-2/4 h-[92%]">
-                     <Description description={props.description} onOpenRepo={handleOpenRepo}/>
+                     <Description description={props.description} onOpenRepo={handleOpenRepo} status={props.status}/>
                 </div>
                    
 

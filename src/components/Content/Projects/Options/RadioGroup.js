@@ -6,25 +6,19 @@ const plans = [
     name: 'Poker Game',
   },
   {
-    name: 'Imersao Dados Alura',
+    name: 'Imersão Dados Alura',
   },
   {
     name: 'Pong',
   },
   {
-    name: 'NLW return',
+    name: 'NLW Return',
   },
   {
     name: 'Hangman',
   },
   {
     name: 'Space Invaders',
-  },
-  {
-    name: 'Java Exercises',
-  },
-  {
-    name: 'Small Python Projects',
   },
   {
     name: 'React Alura'
@@ -36,7 +30,7 @@ export function Options({ onSelectedProjectChange }) {
 
 
   return (
-      <div className="w-[100%] px-4 py-2 max-h-[500px] inset-0 overflow-auto rounded-md scrollbar-thin scrollbar-thumb-gray-900 scrollbar-thumb-rounded ring-2 ring-gray-900 shadow-2xl " >
+      <div className="w-[100%] px-4 py-2 max-h-[400px] inset-0 overflow-auto rounded-md scrollbar-thin scrollbar-thumb-gray-900 scrollbar-thumb-rounded ring-2 ring-gray-900 shadow-2xl " >
         <RadioGroup value={selected} onChange={setSelected} onClick={onSelectedProjectChange}>
           <RadioGroup.Label className="sr-only">Server size</RadioGroup.Label>
           <div className=" w-full space-y-4">
