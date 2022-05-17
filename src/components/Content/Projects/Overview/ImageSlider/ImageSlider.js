@@ -6,21 +6,28 @@ import nlw2 from '../../../../assets/img/nlw/nlw2.png';
 import nlw3 from '../../../../assets/img/nlw/nlw3.png';
 
 
-import cat1 from '../../../../assets/cat1.jpg'
-import cat2 from '../../../../assets/cat2.jpg'
-import cat3 from '../../../../assets/cat3.jpg'
+import poker1 from '../../../../assets/img/poker/poker1.png';
+import poker2 from '../../../../assets/img/poker/poker2.png';
+import poker3 from '../../../../assets/img/poker/poker3.png';
 
-import dog1 from '../../../../assets/dog1.jpg'
-import dog2 from '../../../../assets/dog2.jpg'
-import dog3 from '../../../../assets/dog3.jpg'
+import hangman1 from '../../../../assets/img/hangman/hangman1.png';
+import hangman2 from '../../../../assets/img/hangman/hangman2.png';
 
-import mice1 from '../../../../assets/mice1.jpg'
-import mice2 from '../../../../assets/mice2.jpeg'
-import mice3 from '../../../../assets/mice3.jpg'
+import spaceinvaders1 from '../../../../assets/img/spaceinvaders/spaceinvaders1.png';
+import spaceinvaders2 from '../../../../assets/img/spaceinvaders/spaceinvaders2.png';
+import spaceinvaders3 from '../../../../assets/img/spaceinvaders/spaceinvaders3.png';
 
-import bird1 from '../../../../assets/bird1.jpg'
-import bird2 from '../../../../assets/bird2.jpg'
-import bird3 from '../../../../assets/bird3.jpg'
+import cantinacord1 from '../../../../assets/img/cantinacord/cantinacord1.png';
+import cantinacord2 from '../../../../assets/img/cantinacord/cantinacord2.png';
+
+import pong1 from '../../../../assets/img/pong/pong1.png';
+import pong2 from '../../../../assets/img/pong/pong2.png';
+import pong3 from '../../../../assets/img/pong/pong3.png';
+
+import dadosalura1 from '../../../../assets/img/dadosalura/aluradados1.png';
+import dadosalura2 from '../../../../assets/img/dadosalura/aluradados2.png';
+import dadosalura3 from '../../../../assets/img/dadosalura/aluradados3.png';
+
 
 
 
@@ -45,21 +52,21 @@ export function ImageSlider({ project }) {
 
     useEffect(() => {
         if (project === "Poker Game") {
-            setImage1(cat1);
-            setImage2(cat2);
-            setImage3(cat3);
+            setImage1(poker1);
+            setImage2(poker2);
+            setImage3(poker3);
             setCurrentImage(image1);
         }
         else if (project === "Imersão Dados Alura") {
-            setImage1(dog1);
-            setImage2(dog2);
-            setImage3(dog3);
+            setImage1(dadosalura1);
+            setImage2(dadosalura2);
+            setImage3(dadosalura3);
             setCurrentImage(image1);
         }
         else if (project === "Pong") {
-            setImage1(mice1);
-            setImage2(mice2);
-            setImage3(mice3);
+            setImage1(pong1);
+            setImage2(pong2);
+            setImage3(pong3);
             setCurrentImage(image1);
         }
         else if (project === "NLW return") {
@@ -69,20 +76,20 @@ export function ImageSlider({ project }) {
             setCurrentImage(image1);
         }
         else if (project === "Hangman") {
-            setImage1(bird1);
-            setImage2(bird2);
-            setImage3(bird3);
+            setImage1(hangman1);
+            setImage2(hangman2);
+            setImage3(hangman2);
             setCurrentImage(image1);
         }
         else if (project === "Space Invaders") {
-            setImage1(bird1);
-            setImage2(bird2);
-            setImage3(bird3);
+            setImage1(spaceinvaders1);
+            setImage2(spaceinvaders2);
+            setImage3(spaceinvaders3);
             setCurrentImage(image1);
         } else if (project === "React Alura") {
-            setImage1(bird1);
-            setImage2(bird2);
-            setImage3(bird3);
+            setImage1(cantinacord1);
+            setImage2(cantinacord2);
+            setImage3(cantinacord2);
             setCurrentImage(image1);
         }
 
@@ -95,7 +102,8 @@ export function ImageSlider({ project }) {
             style={{
                 backgroundImage: `url(${currentImage})`,
                 backgroundSize: 'cover',
-                backgroundPosition: 'center',
+                backgroundrepeat: 'no-repeat',
+                backgroundPosition: 'center center',
             }}
         >
 
