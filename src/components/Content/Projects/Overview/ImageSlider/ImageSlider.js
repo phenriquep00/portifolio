@@ -25,9 +25,9 @@ import bird3 from '../../../../assets/bird3.jpg'
 
 export function ImageSlider({ project }) {
 
-    const [image1, setImage1] = useState(cat1);
-    const [image2, setImage2] = useState(cat2);
-    const [image3, setImage3] = useState(cat3);
+    const [image1, setImage1] = useState(fish1);
+    const [image2, setImage2] = useState(fish2);
+    const [image3, setImage3] = useState(fish3);
 
 
     const [currentImage, setCurrentImage] = React.useState(image1);
@@ -47,7 +47,6 @@ export function ImageSlider({ project }) {
             setImage1(cat1);
             setImage2(cat2);
             setImage3(cat3);
-            
         }
         else if (project === "Imersao Dados Alura") {
             setImage1(dog1);
@@ -73,20 +72,12 @@ export function ImageSlider({ project }) {
             setImage1(bird1);
             setImage2(bird2);
             setImage3(bird3);
-        } else if (project === "Java Exercises"){
-            setImage1(bird1);
-            setImage2(bird2);
-            setImage3(bird3);
-        } else if (project === "Small Python Projects"){
-            setImage1(bird1);
-            setImage2(bird2);
-            setImage3(bird3);
-        } else if (project === "React Alura"){
+        } else if (project === "React Alura") {
             setImage1(bird1);
             setImage2(bird2);
             setImage3(bird3);
         }
-        
+
     }, [project]);
 
     useEffect(() => {

@@ -1,7 +1,7 @@
 export const projects = [
     {
         name: "NLW Return",
-        description: "Complete app with front-end, back-end and mobile version developed during the Rocketseat's Next Level Week. The project consists of a responsive widget that get feedback from the user and send it to a backend that add the data to a DB and send a mail to the owner. ",
+        description: "Complete app with front-end, back-end and mobile version developed during the Rocketseat's Next Level Week. The project consists of a responsive widget that get feedback from the user. ",
         repo: "https://github.com/phenriquep00/NLW-Return",
         status: "Completed"
     },
@@ -9,7 +9,7 @@ export const projects = [
         name: "Poker Game",
         description: "A poker game created with python and the pygame library. This is a single player game where the player plays against -yet to be- three smart bots.",
         repo: "https://github.com/phenriquep00/poker",
-        status: "On going"
+        status: "In progress"
 
     },
     {
@@ -41,7 +41,8 @@ export const projects = [
     {
         name: "React Alura",
         description: "A Discord-based app created during Alura's React Imersion in 2022. The app has a simple altentication system based on the user's Github, a Supabase Database that stores the messages and other data, and a chat room with a simple UI.",
-        repo: "https://github.com/phenriquep00/cantina-cord"
+        repo: "https://github.com/phenriquep00/cantina-cord",
+        status: "Completed"
 
     }
 

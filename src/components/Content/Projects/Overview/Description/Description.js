@@ -11,7 +11,7 @@ export function Description( { description, onOpenRepo, status } ) {
                         <br />
                     </p>
 
-                    <Status stts={status}/>
+                    
 
                     <Popover className="absolute bottom-8 flex flex-col items-start">
                         <Popover.Button onClick={onOpenRepo} className="bg-gradient-to-r from-indigo-900 to-purple-600 rounded-full px-3 h-12 text-white flex items-center group hover:ring-2 ring-violet-500">
@@ -24,6 +24,9 @@ export function Description( { description, onOpenRepo, status } ) {
                             </span>
                         </Popover.Button>
                     </Popover>
+
+                    <Status stts={status}/>
+                    
                 </div>
     )
 }

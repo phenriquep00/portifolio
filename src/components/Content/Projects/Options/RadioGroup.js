@@ -3,16 +3,13 @@ import { RadioGroup } from '@headlessui/react'
 
 const plans = [
   {
+    name: 'NLW Return',
+  },
+  {
     name: 'Poker Game',
   },
   {
     name: 'Imersão Dados Alura',
-  },
-  {
-    name: 'Pong',
-  },
-  {
-    name: 'NLW Return',
   },
   {
     name: 'Hangman',
@@ -21,12 +18,15 @@ const plans = [
     name: 'Space Invaders',
   },
   {
+    name: 'Pong',
+  },
+  {
     name: 'React Alura'
   }
 ]
 
 export function Options({ onSelectedProjectChange }) {
-  const [selected, setSelected] = useState("Poker Game")
+  const [selected, setSelected] = useState("NLW Return")
 
 
   return (
