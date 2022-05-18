@@ -7,29 +7,19 @@ export function Body() {
 
     const [isAboutMeFocused, setIsAboutMeFocused] = useState(true);
     const [isProjectsFocused, setIsProjectsFocused] = useState(false);
-    const [isContactFocused, setIsContactFocused] = useState(false);
     const [ whoIsFocused_, setWhoIsFocused_ ] = useState('About Me');
 
 
     function handleAboutMeClick() {
         setIsAboutMeFocused(true);
         setIsProjectsFocused(false);
-        setIsContactFocused(false);
         setWhoIsFocused_('About Me');
     }
 
     function handleProjectsClick() {
         setIsAboutMeFocused(false);
         setIsProjectsFocused(true);
-        setIsContactFocused(false);
         setWhoIsFocused_('Projects');
-    }
-
-    function handleContactClick() {
-        setIsAboutMeFocused(false);
-        setIsProjectsFocused(false);
-        setIsContactFocused(true);
-        setWhoIsFocused_('Contact');
     }
 
     return (
@@ -41,7 +31,6 @@ export function Body() {
 
                     <HeaderButton text="Projects" onClickToFocus={handleProjectsClick} focus={isProjectsFocused} />
 
-                    <HeaderButton text="Contact" onClickToFocus={handleContactClick} focus={isContactFocused} />
 
                 </div>
 

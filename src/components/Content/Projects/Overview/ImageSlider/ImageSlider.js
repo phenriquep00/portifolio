@@ -29,8 +29,6 @@ import dadosalura2 from '../../../../assets/img/dadosalura/aluradados2.png';
 import dadosalura3 from '../../../../assets/img/dadosalura/aluradados3.png';
 
 
-
-
 export function ImageSlider({ project }) {
 
     const [image1, setImage1] = useState(nlw1);
@@ -97,20 +95,20 @@ export function ImageSlider({ project }) {
 
 
     return (
-        <div
-            className="m-4 w-11/12 h-full p-6 text-justify shadow-2xl drop-shadow-2xl rounded-md ring-1 ring-gray-900 flex flex-row items-center transition-all duration-100 ease-in-out transform hover:scale-105"
-            style={{
-                backgroundImage: `url(${currentImage})`,
-                backgroundSize: 'cover',
-                backgroundrepeat: 'no-repeat',
-                backgroundPosition: 'center center',
-            }}
-        >
-
+        <div className="flex flex-row w-full h-full">
             <NavigationButton direction="left" gotClicked={nextImage} />
-
+            <div
+                className="mt-4 w-11/12 h-full text-justify shadow-2xl drop-shadow-2xl rounded-md ring-1 ring-gray-900 flex flex-row items-center transition-all duration-500 ease-in-out transform hover:scale-105"
+                style={{
+                    backgroundImage: `url(${currentImage})`,
+                    backgroundSize: '100% 100%',
+                    backgroundrepeat: 'no-repeat',
+                    backgroundPosition: 'center center',
+                }}
+            >
+            </div>
             <NavigationButton direction="right" gotClicked={prevImage} />
-
         </div>
+
     )
 }
