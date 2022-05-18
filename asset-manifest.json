@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portifolio/static/css/main.b6bc0b9e.css",
-    "main.js": "/portifolio/static/js/main.510c170e.js",
+    "main.css": "/portifolio/static/css/main.16492d1b.css",
+    "main.js": "/portifolio/static/js/main.a13a0301.js",
     "static/js/787.7c2be54f.chunk.js": "/portifolio/static/js/787.7c2be54f.chunk.js",
     "static/media/poker1.png": "/portifolio/static/media/poker1.5cd195daf03c99fe007f.png",
     "static/media/poker2.png": "/portifolio/static/media/poker2.7df140ad1af55102e785.png",
@@ -12,8 +12,10 @@
     "static/media/cantinacord1.png": "/portifolio/static/media/cantinacord1.68851178abdb883f2b49.png",
     "static/media/cantinacord2.png": "/portifolio/static/media/cantinacord2.60758b9789c084936f41.png",
     "static/media/hangman1.png": "/portifolio/static/media/hangman1.e2260aa5d88bd657fe7f.png",
+    "static/media/instagram.png": "/portifolio/static/media/instagram.ce307cbd5c71c42fa503.png",
     "static/media/aluradados1.png": "/portifolio/static/media/aluradados1.dbf305ad40d3318e050c.png",
     "static/media/aluradados2.png": "/portifolio/static/media/aluradados2.9fe8b5dc22ba53e64a72.png",
+    "static/media/twitter.png": "/portifolio/static/media/twitter.27cda7bdfce3369a30e8.png",
     "static/media/pong2.png": "/portifolio/static/media/pong2.fcaf323b2eba1cfc1111.png",
     "static/media/pong1.png": "/portifolio/static/media/pong1.99aa767c2b0dfbf202a5.png",
     "static/media/pong3.png": "/portifolio/static/media/pong3.99cff766732f194dee1a.png",
@@ -23,12 +25,12 @@
     "static/media/hangman2.png": "/portifolio/static/media/hangman2.d759560f49dcab205492.png",
     "static/media/nlw3.png": "/portifolio/static/media/nlw3.37ef68c5f89ca18bde14.png",
     "index.html": "/portifolio/index.html",
-    "main.b6bc0b9e.css.map": "/portifolio/static/css/main.b6bc0b9e.css.map",
-    "main.510c170e.js.map": "/portifolio/static/js/main.510c170e.js.map",
+    "main.16492d1b.css.map": "/portifolio/static/css/main.16492d1b.css.map",
+    "main.a13a0301.js.map": "/portifolio/static/js/main.a13a0301.js.map",
     "787.7c2be54f.chunk.js.map": "/portifolio/static/js/787.7c2be54f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b6bc0b9e.css",
-    "static/js/main.510c170e.js"
+    "static/css/main.16492d1b.css",
+    "static/js/main.a13a0301.js"
   ]
 }
