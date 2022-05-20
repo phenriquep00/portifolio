@@ -5,12 +5,12 @@ import { ImageSlider } from "./Overview/ImageSlider/ImageSlider";
 import projects from "./data";
 
 export function Projects() {
+
     const [selectedProject, setSelectedProject] = useState("NLW Return");
 
     function handleSelectedProjectChange(e) {
         setSelectedProject(e.target.innerText);
     }
-
 
     return (
         <div className="flex flex-row w-full h-full">
@@ -33,9 +33,7 @@ export function Projects() {
                         }
                     })
                 }
-
             </div>
-
         </div>
 
 
