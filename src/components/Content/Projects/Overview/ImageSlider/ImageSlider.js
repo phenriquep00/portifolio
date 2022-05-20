@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { NavigationButton } from './NavigationButton';
 
+// imports of images for slider
 import nlw1 from '../../../../assets/img/nlw/nlw1.png';
 import nlw2 from '../../../../assets/img/nlw/nlw2.png';
 import nlw3 from '../../../../assets/img/nlw/nlw3.png';
-
 
 import poker1 from '../../../../assets/img/poker/poker1.png';
 import poker2 from '../../../../assets/img/poker/poker2.png';
@@ -39,9 +39,7 @@ export function ImageSlider({ project }) {
     const [image2, setImage2] = useState(nlw2);
     const [image3, setImage3] = useState(nlw3);
 
-
     const [currentImage, setCurrentImage] = React.useState(image1);
-
 
 
     function nextImage() {
