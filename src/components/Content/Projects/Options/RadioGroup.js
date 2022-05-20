@@ -22,6 +22,9 @@ const plans = [
   },
   {
     name: 'React Alura'
+  },
+  {
+    name: 'Beat Machine'
   }
 ]
 

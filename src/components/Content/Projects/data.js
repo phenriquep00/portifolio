@@ -44,7 +44,13 @@ export const projects = [
         repo: "https://github.com/phenriquep00/cantina-cord",
         status: "Completed"
 
-    }
+    },
+    {
+        name: "Beat Machine",
+        description: "A beat machine created with python and the pygame library.",
+        repo: "https://github.com/phenriquep00/pong",
+        status: "Completed"
+    },
 
 ]
 
