@@ -28,6 +28,10 @@ import dadosalura1 from '../../../../assets/img/dadosalura/aluradados1.png';
 import dadosalura2 from '../../../../assets/img/dadosalura/aluradados2.png';
 import dadosalura3 from '../../../../assets/img/dadosalura/aluradados3.png';
 
+import drum1 from '../../../../assets/img/drum/drum1.png';
+import drum2 from '../../../../assets/img/drum/drum2.png';
+import drum3 from '../../../../assets/img/drum/drum3.png';
+
 
 export function ImageSlider({ project }) {
 
@@ -88,6 +92,11 @@ export function ImageSlider({ project }) {
             setImage1(cantinacord1);
             setImage2(cantinacord2);
             setImage3(cantinacord2);
+            setCurrentImage(image1);
+        } else if (project === "Beat Machine") {
+            setImage1(drum1);
+            setImage2(drum2);
+            setImage3(drum3);
             setCurrentImage(image1);
         }
 
