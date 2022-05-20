@@ -47,7 +47,7 @@ export const projects = [
     },
     {
         name: "Beat Machine",
-        description: "A beat machine created with python and the pygame library.",
+        description: "A beat machine created with python and the pygame library based on the freeCodeCamp tutorial that builds a similar application.",
         repo: "https://github.com/phenriquep00/beat-machine",
         status: "Completed"
     },
