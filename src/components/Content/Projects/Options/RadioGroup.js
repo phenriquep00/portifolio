@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { RadioGroup } from '@headlessui/react'
 
-
+// data for radio buttons
 const plans = [
   {
     name: 'NLW Return',
