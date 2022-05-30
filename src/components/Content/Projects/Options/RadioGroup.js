@@ -13,6 +13,9 @@ const plans = [
     name: 'Imersão Dados Alura',
   },
   {
+    name: 'Imersão Dados Alura 4',
+  },
+  {
     name: 'Hangman',
   },
   {

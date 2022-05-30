@@ -32,6 +32,10 @@ import drum1 from '../../../../assets/img/drum/drum1.png';
 import drum2 from '../../../../assets/img/drum/drum2.png';
 import drum3 from '../../../../assets/img/drum/drum3.png';
 
+import dados1 from '../../../../assets/img/dadosalura4/dados1.png';
+import dados2 from '../../../../assets/img/dadosalura4/dados2.png';
+import dados3 from '../../../../assets/img/dadosalura4/dados3.png';
+
 
 export function ImageSlider({ project }) {
 
@@ -95,6 +99,11 @@ export function ImageSlider({ project }) {
             setImage1(drum1);
             setImage2(drum2);
             setImage3(drum3);
+            setCurrentImage(image1);
+        } else if (project === "Imerção Dados Alura 4") { 
+            setImage1(dados1);
+            setImage2(dados2);
+            setImage3(dados3);
             setCurrentImage(image1);
         }
 
