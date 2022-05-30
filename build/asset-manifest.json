@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portifolio/static/css/main.16492d1b.css",
-    "main.js": "/portifolio/static/js/main.a13a0301.js",
+    "main.js": "/portifolio/static/js/main.3a4df5cf.js",
     "static/js/787.7c2be54f.chunk.js": "/portifolio/static/js/787.7c2be54f.chunk.js",
     "static/media/poker1.png": "/portifolio/static/media/poker1.5cd195daf03c99fe007f.png",
     "static/media/poker2.png": "/portifolio/static/media/poker2.7df140ad1af55102e785.png",
@@ -11,7 +11,10 @@
     "static/media/spaceinvaders1.png": "/portifolio/static/media/spaceinvaders1.ba7a357b285b3197a1f3.png",
     "static/media/cantinacord1.png": "/portifolio/static/media/cantinacord1.68851178abdb883f2b49.png",
     "static/media/cantinacord2.png": "/portifolio/static/media/cantinacord2.60758b9789c084936f41.png",
+    "static/media/drum1.png": "/portifolio/static/media/drum1.2da8c31513b7a09a41c0.png",
     "static/media/hangman1.png": "/portifolio/static/media/hangman1.e2260aa5d88bd657fe7f.png",
+    "static/media/drum3.png": "/portifolio/static/media/drum3.78a8b11c769e19320566.png",
+    "static/media/drum2.png": "/portifolio/static/media/drum2.282969e0cb066ab77796.png",
     "static/media/instagram.png": "/portifolio/static/media/instagram.ce307cbd5c71c42fa503.png",
     "static/media/aluradados1.png": "/portifolio/static/media/aluradados1.dbf305ad40d3318e050c.png",
     "static/media/aluradados2.png": "/portifolio/static/media/aluradados2.9fe8b5dc22ba53e64a72.png",
@@ -26,11 +29,11 @@
     "static/media/nlw3.png": "/portifolio/static/media/nlw3.37ef68c5f89ca18bde14.png",
     "index.html": "/portifolio/index.html",
     "main.16492d1b.css.map": "/portifolio/static/css/main.16492d1b.css.map",
-    "main.a13a0301.js.map": "/portifolio/static/js/main.a13a0301.js.map",
+    "main.3a4df5cf.js.map": "/portifolio/static/js/main.3a4df5cf.js.map",
     "787.7c2be54f.chunk.js.map": "/portifolio/static/js/787.7c2be54f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.16492d1b.css",
-    "static/js/main.a13a0301.js"
+    "static/js/main.3a4df5cf.js"
   ]
 }

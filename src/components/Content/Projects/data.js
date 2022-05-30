@@ -18,6 +18,7 @@ export const projects = [
         repo: "https://github.com/phenriquep00/imersao_dados_alura",
         status: "Completed"
     },
+    
     {
         name: "Hangman",
         description: "A React app created with the purpose of learning React. This app is a single player hangman game. The words of the game come from a supabase Database.",

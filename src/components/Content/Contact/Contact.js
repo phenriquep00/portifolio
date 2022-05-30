@@ -6,7 +6,7 @@ import { SocialButtons } from './SocialButtons';
 
 export function Contact() {
     return (
-        <div className="flex flex-row gap-40 mt-4">
+        <div className="flex flex-row gap-40 mb-6">
             <SocialButtons image={github} link="https://github.com/phenriquep00"/>
             <SocialButtons image={linkedin} link="https://www.linkedin.com/in/pedro-lima-255a33223/"/>
             <SocialButtons image={twitter} link="https://twitter.com/Pedro32977686"/>
