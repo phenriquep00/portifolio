@@ -19,7 +19,7 @@ export const projects = [
         status: "Completed"
     },
     {
-        name: "Imersão Dados Alura 4 ",
+        name: "Imersão Dados Alura 4",
         description: "A data analysis project created with python and the pandas library inside Google Collab during Alura's Data Imersion in 2022. This project uses data visualization tools such as matplotlib and seaborn to create a data analysis dashboard.",
         repo: "https://github.com/phenriquep00/imersao_dados_alura",
         status: "Completed"

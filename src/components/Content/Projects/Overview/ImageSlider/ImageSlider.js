@@ -100,7 +100,7 @@ export function ImageSlider({ project }) {
             setImage2(drum2);
             setImage3(drum3);
             setCurrentImage(image1);
-        } else if (project === "Imerção Dados Alura 4") { 
+        } else if (project === "Imersão Dados Alura 4") { 
             setImage1(dados1);
             setImage2(dados2);
             setImage3(dados3);
