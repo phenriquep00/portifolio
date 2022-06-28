@@ -57,6 +57,13 @@ export const projects = [
         repo: "https://github.com/phenriquep00/beat-machine",
         status: "Completed"
     },
+    {   
+        // todo: add event platform images
+        name: "Event Platform",
+        description: "A event platform created during Rocketseat's Ignite Lab, using graphQL and graphCMS to organize the data.",
+        repo: "https://github.com/phenriquep00/ignite-lab-event-platform",
+        status: "Completed"
+    },
 
 ]
 

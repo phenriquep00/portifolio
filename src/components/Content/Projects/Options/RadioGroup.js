@@ -29,7 +29,10 @@ const plans = [
   },
   {
     name: 'Beat Machine'
-  }
+  },
+  {
+    name: 'Event Platform'
+  },
 ]
 
 export function Options({ onSelectedProjectChange }) {
